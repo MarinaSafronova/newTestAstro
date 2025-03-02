@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import robotsTxt from 'astro-robots-txt';
 import partytown from '@astrojs/partytown';
-import vercel from '@astrojs/vercel';
+import awsAmplify from 'astro-aws-amplify';
 
 
 // https://astro.build/config
@@ -17,5 +17,5 @@ export default defineConfig({
   integrations: [tailwind({}), sitemap(), partytown({ config: { forward: ["dataLayer.push"] } }), robotsTxt({
     sitemap: true,
   })],
-  adapter: vercel()
+ adapter: awsAmplify()
 });
