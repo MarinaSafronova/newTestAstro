@@ -17,6 +17,8 @@ export default defineConfig({
   integrations: [tailwind({}), sitemap(), partytown({ config: { forward: ["dataLayer.push"] } }), robotsTxt({
     sitemap: true,
   })],
-
+  build: {
+    assets: 'dist'
+  },
  adapter: awsAmplify()
 });

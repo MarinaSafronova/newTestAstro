@@ -1,6 +1,6 @@
 import { renderers } from './renderers.mjs';
 import { s as serverEntrypointModule } from './chunks/_@astrojs-ssr-adapter_Df3TbwV-.mjs';
-import { manifest } from './manifest_BNVscRUR.mjs';
+import { manifest } from './manifest_Di6zXZMt.mjs';
 
 const serverIslandMap = new Map();;
 
@@ -64,7 +64,7 @@ const _args = {
     "server": "file:///D:/MYWork/astroStart/regular-resonance/.amplify-hosting/compute/default/",
     "host": false,
     "port": 3000,
-    "assets": "_astro"
+    "assets": "dist"
 };
 
 const _start = 'start';
