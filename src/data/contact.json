@@ -1,0 +1,23 @@
+{
+    "page": "Contact",
+    "seo_title": "Simbased | Get in touch",
+    "seo_desc": "Contact Simbased today to discuss your engineering consulting needs and benefit from personalized solutions driving your business forward.",
+    "title": "Let's solve challenges together",
+    "email": "info@simbased.com",
+    "bg_hero": "/images/contact/contact.png",
+    "map_title": "Where are we based?",
+    "we_based": [
+        {
+            "city": "Austin, USA",
+            "address": "2028 E Ben White Blvd, Austin, TX 78741, USA"
+        },
+        {
+            "city": "Ljubljana, Slovenia",
+            "address": "Einspielerjeva ulica 6, 1000 Ljubljana, Slovenija"
+        },
+        {
+            "city": "Vienna, Austria",
+            "address": "Sechshauser Str. 58-74"
+        }
+    ]
+}

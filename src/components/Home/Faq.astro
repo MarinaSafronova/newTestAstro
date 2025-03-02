@@ -1,0 +1,241 @@
+---
+import { Picture } from "astro:assets";
+import Home from "../../data/home.json";
+---
+
+<section class="section-y-padding bg-zinc-50">
+    <div class="container mb-10">
+        <p class="preheader mb-1">Your trusted partner</p>
+        <h2 class="tracking-[-3%]">
+            Why choose
+            <span
+                style="
+                    background-image: linear-gradient(
+                        90deg,
+                        #0b9d6c -6.7%,
+                        #319ea6 36.1%,
+                        #7da9ff 112.45%
+                    );
+                "
+                class="bg-clip-text text-transparent">Simbased?</span
+            >
+        </h2>
+    </div>
+    <div class="container grid grid-cols-1 gap-10 lg:grid-cols-2">
+        <!-- selector -->
+        <div>
+            <div>
+                <button
+                    class="text-left w-full p-6 lg:p-10 bg-white border border-l-8 duration-300 ease-in-out border-l-primary accordion-faq active"
+                >
+                    <div class="flex gap-x-2 justify-between items-center">
+                        <p
+                            class="text-base lg:text-2xl font-medium text-balance text-accent"
+                        >
+                            {Home.faq[0].question}
+                        </p>
+                        <p
+                            class="text-4xl lg:text-5xl text-foreground/30 font-thin"
+                        >
+                            <svg
+                                class="minus hidden"
+                                width="20"
+                                height="18"
+                                viewBox="0 0 18 17"
+                                class="text-primary"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2.87223 9.20329V7.17329H14.5972V9.20329H2.87223Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <svg
+                                class="plus block"
+                                width="20"
+                                height="18"
+                                viewBox="0 0 20 18"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                ><path
+                                    d="M9.27602 17.4983V9.76329H1.57602V7.66329H9.27602V-0.00170898H11.376V7.66329H19.076V9.76329H11.376V17.4983H9.27602Z"
+                                    fill="#373651"
+                                    fill-opacity="0.5"></path>
+                                    
+                            </svg>
+                        </p>
+                    </div>
+                    <div
+                        class="overflow-hidden"
+                        style="width: 100%; height: 0px"
+                    >
+                        <div class="accordion-content">
+                            <p
+                                class="text-muted-foreground text-sm lg:text-base text-left pt-2"
+                            >
+                                {Home.faq[0].answer}<br />
+                            </p>
+                        </div>
+                    </div></button
+                >
+                <button
+                    class="text-left w-full p-6 lg:p-10 bg-white border border-l-8 duration-300 ease-in-out border-l-zinc-100 accordion-faq"
+                >
+                    <div class="flex gap-x-2 justify-between items-center">
+                        <p
+                            class="text-base lg:text-2xl font-medium text-balance text-foreground"
+                        >
+                        {Home.faq[1].question}
+                        </p>
+                        <p
+                            class="text-4xl lg:text-5xl text-foreground/30 font-thin"
+                        >
+                            <svg
+                                class="minus hidden"
+                                width="20"
+                                height="18"
+                                viewBox="0 0 18 17"
+                                class="text-primary"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2.87223 9.20329V7.17329H14.5972V9.20329H2.87223Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <svg
+                                class="plus block"
+                                width="20"
+                                height="18"
+                                viewBox="0 0 20 18"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                ><path
+                                    d="M9.27602 17.4983V9.76329H1.57602V7.66329H9.27602V-0.00170898H11.376V7.66329H19.076V9.76329H11.376V17.4983H9.27602Z"
+                                    fill="#373651"
+                                    fill-opacity="0.5"></path>
+                                    
+                            </svg>
+                        </p>
+                    </div>
+                    <div
+                        class="overflow-hidden"
+                        style="width: 100%; height: 0px"
+                    >
+                        <div class="accordion-content">
+                            <p
+                                class="text-muted-foreground text-sm lg:text-base text-left pt-2"
+                            >
+                                {Home.faq[1].answer}<br />
+                            </p>
+                        </div>
+                    </div></button
+                >
+                <button
+                    class="text-left w-full p-6 lg:p-10 bg-white border border-l-8 duration-300 ease-in-out border-l-zinc-100 accordion-faq"
+                >
+                    <div class="flex gap-x-2 justify-between items-center">
+                        <p
+                            class="text-base lg:text-2xl font-medium text-balance text-foreground"
+                        >
+                         {Home.faq[2].question}
+                        </p>
+                        <p
+                            class="text-4xl lg:text-5xl text-foreground/30 font-thin"
+                        >
+                            <svg
+                                class="minus hidden"
+                                width="20"
+                                height="18"
+                                viewBox="0 0 18 17"
+                                class="text-primary"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2.87223 9.20329V7.17329H14.5972V9.20329H2.87223Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <svg
+                                class="plus block"
+                                width="20"
+                                height="18"
+                                viewBox="0 0 20 18"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                ><path
+                                    d="M9.27602 17.4983V9.76329H1.57602V7.66329H9.27602V-0.00170898H11.376V7.66329H19.076V9.76329H11.376V17.4983H9.27602Z"
+                                    fill="#373651"
+                                    fill-opacity="0.5"></path>
+                                    
+                            </svg>
+                        </p>
+                    </div>
+                    <div
+                        class="overflow-hidden"
+                        style="width: 100%; height: 0px"
+                    >
+                        <div class="accordion-content">
+                            <p
+                                class="text-muted-foreground text-sm lg:text-base text-left pt-2"
+                            >
+                                {Home.faq[2].answer}<br />
+                            </p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- image -->
+        <div class="w-full aspect-[1.3]">
+            <Picture
+                src={Home.faq_img}
+                alt="Excavator with numerical simulation"
+                class="object-cover w-full h-full"
+                loading="lazy"
+                width="897"
+                height="537"
+                formats={["png", "webp"]}
+            />
+        </div>
+    </div>
+</section>
+<script>
+    const buttons = document.querySelectorAll("button.accordion-faq");
+
+    // Handle clicks on each button.
+    buttons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+            // Remove active class from all buttons.
+            buttons.forEach((button) => {
+                button.classList.remove("active");
+                button.classList.remove("border-l-primary");
+            });
+            button.classList.add("active");
+            button.classList.add("border-l-primary");
+
+        });
+    });
+</script>
+
+<style>
+    .accordion-faq {
+        @apply rounded-lg;
+    }
+    .accordion-faq .overflow-hidden {
+        transition: height 0.8s linear;
+    }
+    .accordion-faq.active {
+        @apply border-l-primary;
+    }
+    .accordion-faq.active .overflow-hidden {
+        height: auto !important;
+    }
+    .accordion-faq.active .plus {
+        @apply hidden;
+    }
+    .accordion-faq.active .minus {
+        @apply block;
+        color: rgb(33, 154, 166)
+    }
+</style>

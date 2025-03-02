@@ -1,0 +1,391 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Picture } from "astro:assets";
+import FeaturedSlider from "../../components/FeaturedSlider.astro";
+import Data from "../../data/services.json";
+---
+
+<Layout
+    title={Data[0].seo_title}
+    desc={Data[0].seo_desc}
+>
+    <div class="h-[60px] lg:h-[96px]"></div>
+
+    <section
+        id="el-hero"
+        class="w-screen h-[calc(100vh-70px)] bg-cover bg-blend-multiply bg-no-repeat bg-right-bottom overflow-x-hidden max-w-screen relative isolate"
+    >
+        <div
+            class="left-1/2 lg:top-1/2 transform lg:-translate-y-1/2 w-full container -translate-x-1/2 overflow-visible absolute flex flex-col items-start lg:items-start py-5 z-30 text-foreground lg:text-white pt-10"
+        >
+            <p class="preheader mb-1">OUR SERVICES</p>
+            <h1 class="text-foreground lg:text-white mb-2">
+                {Data[0].name}
+            </h1>
+            <p class="mb-3 lg:mb-5 max-w-xl text-sm lg:text-lg">
+                {Data[0].desc}
+            </p>
+            <a
+                href="/contact"
+                class="px-5 lg:px-7 text-sm w-fit items-start py-3 lg:py-3.5 flex gap-x-3 hover:ring-2 hover:ring-primary hover:ring-opacity-50 duration-300 bg-gradient-to-r from-[#1FA48C] via-[#1F9BA4] to-[#1F6CA4] text-white"
+                >Get in touch
+            </a>
+            <!-- <div class="text-white overflow-hidden">
+      <div class="hidden md:flex gap-x-3 items-center"></div>
+      <div class="my-7 md:my-2"></div>
+      <h1
+        id="hero-title"
+        class={`text-[2rem] leading-[2rem] md:text-5xl font-medium text-white max-w-xl`}
+      >
+        {title}
+      </h1>
+      <p
+        id="hero-body"
+        class={`leading-[1.5rem] text-[1.02rem] md:text-xl max-w-[340px] text-white/80 md:max-w-xl mt-3`}
+      >
+        {subtitle}
+      </p>
+      <div class="py-2 md:py-4"></div>
+      <div class="flex items-center w-full md:w-fit gap-x-4">
+        <Button href="/contact">
+          Get in touch
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 19 19"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 18.4059L12.9944 6.39343"
+              stroke="white"
+              stroke-opacity="0.9"
+              stroke-width="1.7"></path>
+            <path
+              d="M13.0277 6.49352C13.4968 6.49352 13.877 6.11268 13.877 5.64288C13.877 5.17308 13.4968 4.79224 13.0277 4.79224L13.0277 6.49352ZM1.75895 6.49352H13.0277L13.0277 4.79224H1.75895L1.75895 6.49352Z"
+              fill="white"
+              fill-opacity="0.9"></path>
+            <path
+              d="M13.877 6.39338C13.877 5.92358 13.4968 5.54273 13.0277 5.54273C12.5586 5.54273 12.1783 5.92358 12.1783 6.39338L13.877 6.39338ZM13.877 17.6791V6.39338L12.1783 6.39338V17.6791L13.877 17.6791Z"
+              fill="white"
+              fill-opacity="0.9"></path>
+          </svg>
+        </Button>
+      </div>
+    </div> -->
+        </div>
+        <div
+            class="absolute w-full z-10 h-full top-0 left-0 gradient-hero-3"
+            style=""
+        >
+        </div>
+        <!-- <img
+    src={src}
+    alt="Hero image"
+    loading="eager"
+    class="object-cover w-full h-full z-0"
+  /> -->
+        <div class="absolute z-0 w-full h-full top-0 left-0">
+            <Picture
+                src={Data[0].hero_bg || "/images/home/digger.png"}
+                loading="eager"
+                alt="Hero image"
+                class="object-cover absolute bottom-0 w-full h-[42vh] lg:h-full z-0 -scale-x-100"
+                width="1920"
+                height="991"
+                decoding="async"
+                formats={["png", "webp"]}
+            />
+        </div>
+    </section>
+
+    <section
+        style="background-image: url('/bgs/06 3.png')"
+        class="section-y-padding bg-zinc-100"
+    >
+        <div class="container mb-10">
+            <h2 class="max-w-lg">
+                Types of numerical
+                <span
+                    style="
+              background-image: linear-gradient(
+                90deg,
+                #0b9d6c -6.7%,
+                #319ea6 36.1%,
+                #7da9ff 112.45%
+              );
+            "
+                    class="text-transparent bg-clip-text">simulations</span
+                >
+            </h2>
+        </div>
+        <div class="container">
+            <div
+                class="navs-mobile-screen flex top-0 left-0 mb-3 z-10 overflow-x-auto gap-2 lg:hidden tabs-btn"
+            >
+            {
+                Data[1].info.map((item) => (
+                    <button
+                        role="tab"
+                        class="tabs-nav-mobile p-4 text-left duration-300 shrink-0 ease-in-out border-b text-muted-foreground bg-white border-l-8 border-tran">
+                        {item.title}
+                    </button>
+                ))
+            }
+            </div>
+            <div
+                class="flex w-full bg-white border min-h-[450px] max-h-[1000px]"
+            >
+                <div
+                    style="box-shadow: 10px 0px 20px 0px #40404020"
+                    class="tabs-nav max-w-[280px] min-w-[280px] border-r flex-col hidden lg:flex overflow-y-auto"
+                >
+                    {
+                        Data[1].info.map((item) => (
+                            <button
+                                role="tab"
+                                class="header-tab p-4 pl-6 text-left duration-300 ease-in-out border-b text-muted-foreground"
+                            >
+                                {item.title}
+                            </button>
+                        ))
+                    }
+
+                    <div class="flex-grow"></div>
+                    <a
+                        href="/contact"
+                        class="p-3 text-center border m-2 bg-primary text-white"
+                        >Get in touch</a
+                    >
+                </div>
+                {
+                    Data[1].info.map((item) => (
+                        <div
+                            class="tabcontent p-8 lg:p-14 w-full grid lg:grid-cols-2 gap-8 place-content-start"
+                            style='background-image: url("undefined"); background-size: cover; background-position: right center;'
+                        >
+                            <div class="col-span-1">
+                                <h4 class="mb-4">{item.title}</h4>
+                                <div class="prose prose-sm min-w-full text-muted-foreground"></div>
+                                <h5 class="mb-4 mt-5 hidden">Our analyses</h5>
+                                <ul class="max-w-lg grid grid-cols-1 gap-y-5">
+                                    {item.list.map((li) => (
+                                        <li class="flex text-muted-foreground gap-3">
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            class="shrink-0"
+                                            viewBox="0 0 20 20"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <g clip-path="url(#clip0_2_1638)">
+                                                <path
+                                                    opacity="0.15"
+                                                    d="M9.59155 19.183C14.8888 19.183 19.1831 14.8888 19.1831 9.59149C19.1831 4.29422 14.8888 -6.10352e-05 9.59155 -6.10352e-05C4.29428 -6.10352e-05 0 4.29422 0 9.59149C0 14.8888 4.29428 19.183 9.59155 19.183Z"
+                                                    fill="#0A9A95"
+                                                />
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M13.6797 5.91082L7.96077 11.438L6.4501 9.80739C6.30722 9.68274 6.12634 9.61015 5.93693 9.60144C5.74752 9.59273 5.56074 9.64842 5.40702 9.75943C5.2583 9.86391 5.15381 10.02 5.11391 10.1973C5.07401 10.3747 5.10157 10.5605 5.19121 10.7186L6.98963 13.656C7.16947 13.9198 7.48119 14.0876 7.8169 14.0876C8.1526 14.0876 8.45234 13.9198 8.63218 13.656C8.91993 13.2843 14.4111 6.7261 14.4111 6.7261C15.1305 6.00673 14.2552 5.34731 13.6917 5.91082H13.6797Z"
+                                                    fill="#0A9A95"
+                                                />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_2_1638">
+                                                    <rect
+                                                        width="19.1831"
+                                                        height="19.1831"
+                                                        fill="white"
+                                                    />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        {li}
+                                    </li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div class="w-full max-h-[480px] relative col-span-1">
+                                <img
+                                    loading="lazy"
+                                    alt={item.title}
+                                    class="object-contain h-full w-full"
+                                    src={item.img}
+                                />
+                            </div>
+                        </div>
+                    ))
+                }
+                
+            </div>
+        </div>
+    </section>
+    <FeaturedSlider />
+    <section
+        style="
+        background-image: url('/bgs/color-bg 2.png');
+        background-size: cover;
+        background-position: center;
+      "
+        class="bg-primary py-12 lg:py-20"
+    >
+        <div class="container">
+            <h2 class="text-white mb-6 lg:mb-7 max-w-xs lg:max-w-xl">
+                Level up your products with Simbased
+            </h2>
+            <a
+                href="/contact"
+                class="px-5 lg:px-7 text-sm w-fit items-start py-3 lg:py-3.5 flex gap-x-3 hover:ring-2 hover:ring-primary hover:ring-opacity-50 duration-300 bg-white text-black"
+            >
+                <span>Get in touch</span>
+                <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M1 18.4059L12.9944 6.39343"
+                        stroke="black"
+                        stroke-opacity="0.9"
+                        stroke-width="1.7"></path>
+                    <path
+                        d="M13.0277 6.49352C13.4968 6.49352 13.877 6.11268 13.877 5.64288C13.877 5.17308 13.4968 4.79224 13.0277 4.79224L13.0277 6.49352ZM1.75895 6.49352H13.0277L13.0277 4.79224H1.75895L1.75895 6.49352Z"
+                        fill="black"
+                        fill-opacity="0.9"></path>
+                    <path
+                        d="M13.877 6.39338C13.877 5.92358 13.4968 5.54273 13.0277 5.54273C12.5586 5.54273 12.1783 5.92358 12.1783 6.39338L13.877 6.39338ZM13.877 17.6791V6.39338L12.1783 6.39338V17.6791L13.877 17.6791Z"
+                        fill="black"
+                        fill-opacity="0.9"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .gradient-hero-3 {
+        background: linear-gradient(81.65deg, #0b1729 17.47%, #0000 99.64%);
+        @media (max-width: 1024px) {
+            background: none;
+        }
+    }
+    .tabcontent {
+        display: none;
+    }
+
+    .tabcontent.show {
+        display: grid;
+    }
+    .header-tab {
+        cursor: pointer;
+    }
+
+    .header-tab.show {
+        @apply text-primary;
+        @apply bg-primary/10 border-l-8 border-l-primary;
+    }
+    .tabs-nav-mobile.show {
+        @apply text-primary;
+        @apply bg-primary/10 border-l-8 border-l-primary;
+    }
+    .navs-mobile-screen {
+        scrollbar-width: thin;
+    }
+
+    .navs-mobile-screen::-webkit-scrollbar {
+        width: 3px;
+    }
+    .navs-mobile-screen::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgb(33, 154, 166);
+    }
+</style>
+<script>
+    window.addEventListener("DOMContentLoaded", function () {
+        "use strict";
+        let tab = document.querySelectorAll(".header-tab"),
+            header = document.querySelector(".tabs-nav"),
+            tabMobile = document.querySelectorAll(".tabs-nav-mobile"),
+            headerSmall = document.querySelector(".navs-mobile-screen"),
+            tabContent = document.querySelectorAll(".tabcontent");
+        //Show first tab
+        tabContent.forEach(function (item, index) {
+            if (index === 0) {
+                item.classList.add("show")
+            }
+        })
+        tab.forEach(function (item, index) {
+            if(index === 0){
+                item.classList.add("show")
+            }
+        })
+        tabMobile.forEach(function (item, index) {
+            if(index === 0){
+                item.classList.add("show")
+            }
+        })
+        function hideTabContent(a: any) {
+            for (let i = a; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("show");
+                tabContent[i].classList.add("hide");
+            }
+        }
+
+        hideTabContent(1);
+
+        function showTabContent(b: any) {
+            if (tabContent[b].classList.contains("hide")) {
+                tabContent[b].classList.remove("hide");
+                tabContent[b].classList.add("show");
+            }
+        }
+        tab.forEach(function (item, index) {
+            item.addEventListener("click", function (event) {
+                tab.forEach(function (i) {
+                    i.classList.remove("show");
+                });
+                item.classList.toggle("show");
+            });
+        });
+
+        tabMobile.forEach(function (item) {
+            item.addEventListener("click", function (event) {
+                tabMobile.forEach(function (i) {
+                    i.classList.remove("show");
+                });
+                item.classList.toggle("show");
+            });
+        });
+
+        header?.addEventListener("click", function (event) {
+            let target = event.target as HTMLElement;
+
+            if (target && target.classList.contains("header-tab")) {
+                for (let i = 0; i < tab.length; i++) {
+                    if (target == tab[i]) {
+                        hideTabContent(0);
+                        showTabContent(i);
+                        break;
+                    }
+                }
+            }
+        });
+        headerSmall?.addEventListener("click", function (event) {
+            let target = event.target as HTMLElement;
+
+            if (target && target.classList.contains("tabs-nav-mobile")) {
+                for (let i = 0; i < tabMobile.length; i++) {
+                    if (target == tabMobile[i]) {
+                        hideTabContent(0);
+                        showTabContent(i);
+                        break;
+                    }
+                }
+            }
+        });
+    });
+</script>

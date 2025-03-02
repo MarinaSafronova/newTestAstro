@@ -1,0 +1,291 @@
+---
+import Industry from "../../data/industry.json";
+import Services from "../../data/services.json";
+---
+
+<header
+    class="fixed top-0 bg-white left-0 w-screen border-b py-6 z-[999] shadow-sm"
+>
+    <div class="container flex items-center gap-x-12 justify-between">
+        <a href="/" title="Home">
+            <img
+                class="w-[150px] lg:w-[200px]"
+                src="/logo.png"
+                alt="Simbased logo"
+                class="logo aspect-[236/31]"
+            />
+        </a>
+        <div class="flex-grow"></div>
+        <ul class="gap-x-12 text-[15px] font-semibold hidden lg:flex">
+            <li class="group cursor-pointer">
+                <div class="relative">
+                    <div
+                        class="text-foreground/70 hover:text-primary font-normal text-[15px] capitalize lg:text-base"
+                    >
+                        Industries
+                    </div>
+                    <div
+                        class="group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 absolute z-[99999] duration-300 ease-in-out border top-5 left-0 p-2 w-[220px] h-fit bg-white shadow-xl invisible opacity-0 translate-y-2"
+                    >
+                        <p
+                            class="text-zinc-500 px-1.5 pt-3 font-normal uppercase text-sm mb-3"
+                        >
+                            Industries
+                        </p>
+                        <ul class="flex gap-x-4 flex-col">
+                            {
+                                Industry.industrys.map((item) => (
+                                    <a
+                                        href=`/industries?industry=${item.industry_url}#selector`
+                                        class="industry-link w-full text-left text-nowrap flex group duration-300 p-2 hover:bg-primary/10 items-center gap-x-2"
+                                    >
+                                        <img
+                                            width="16"
+                                            height="16"
+                                            src={item.logo_indusri_logo}
+                                            alt={item.industry}
+                                        />
+                                        <div class="font-normal w-full text-left group-hover:text-primary text-zinc-700 duration-300">
+                                            {item.industry}
+                                        </div>
+                                    </a>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="group cursor-pointer">
+                <div class="relative group cursor-pointer">
+                    <div
+                        class="text-foreground/70 hover:text-primary font-normal text-[15px] capitalize lg:text-base"
+                    >
+                        Services
+                    </div>
+                    <div
+                        class="group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 absolute z-[99999] duration-300 ease-in-out border top-5 left-0 p-2 w-[220px] h-fit bg-white shadow-xl invisible opacity-0 translate-y-2"
+                    >
+                        <p
+                            class="text-zinc-500 px-1.5 pt-3 font-normal uppercase text-sm mb-3"
+                        >
+                            Services
+                        </p>
+                        <ul class="flex gap-x-4 flex-col">
+                            {
+                                Services.map((item) => (
+                                <a
+                                    href={item.url}
+                                    class="w-full text-left text-nowrap flex group duration-300 p-2 hover:bg-primary/10 items-center gap-x-2"
+                                    ><div
+                                        class="font-normal w-full text-left group-hover:text-primary text-zinc-700 duration-300"
+                                    >
+                                        {item.name}
+                                    </div>
+                                </a>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a
+                    class="text-foreground/70 hover:text-primary lg:text-base font-normal text-[15px]"
+                    href="/about"
+                >
+                    About us
+                </a>
+            </li>
+            <li>
+                <a
+                    class="text-foreground/70 hover:text-primary lg:text-base font-normal text-[15px]"
+                    href="/case-studies/case"
+                >
+                    Case studies
+                </a>
+            </li>
+        </ul>
+        <a
+            href="/contact"
+            class="px-5 lg:px-7 text-sm w-fit items-start py-3 lg:py-3.5 gap-x-3 hover:ring-2 hover:ring-primary hover:ring-opacity-50 duration-300 hidden lg:flex bg-gradient-to-r from-[#1FA48C] via-[#1F9BA4] to-[#1F6CA4] text-white"
+        >
+            <span class="lg:text-base">Get in touch</span>
+            <svg
+                width="15"
+                height="15"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M1 18.4059L12.9944 6.39343"
+                    stroke="white"
+                    stroke-opacity="0.9"
+                    stroke-width="1.7"></path>
+                <path
+                    d="M13.0277 6.49352C13.4968 6.49352 13.877 6.11268 13.877 5.64288C13.877 5.17308 13.4968 4.79224 13.0277 4.79224L13.0277 6.49352ZM1.75895 6.49352H13.0277L13.0277 4.79224H1.75895L1.75895 6.49352Z"
+                    fill="white"
+                    fill-opacity="0.9"></path>
+                <path
+                    d="M13.877 6.39338C13.877 5.92358 13.4968 5.54273 13.0277 5.54273C12.5586 5.54273 12.1783 5.92358 12.1783 6.39338L13.877 6.39338ZM13.877 17.6791V6.39338L12.1783 6.39338V17.6791L13.877 17.6791Z"
+                    fill="white"
+                    fill-opacity="0.9"></path>
+            </svg>
+        </a>
+        <div
+            style="box-shadow: -30px 0px 30px rgba(0, 0, 0, 0.1)"
+            class="mobile-menu invisible opacity-0 translate-x-[100%] duration-500 ease-in-out w-screen h-[100vh] text-foreground z-[9999] top-[65px] bg-white/80 border-t backdrop-blur-lg fixed left-0 px-6 pt-12"
+        >
+            <div class="rounded-lg p-5 duration-300 ease-in-out">
+                <div class="menu">
+                    <p class="text-sm text-foreground"></p>
+                    <ul class="flex flex-col gap-y-7 text-foreground">
+                        <div class="text-xl">
+                            <button
+                                class="flex items-center gap-x-2 button-submenu"
+                            >
+                                Industries<svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-4 w-4 text-foreground duration-500 ease-in-out"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path stroke-width="1.5" d="M19 9l-7 7-7-7"
+                                    ></path>
+                                </svg>
+                            </button>
+                            <div
+                                class="sub-menu text-base flex flex-col invisible opacity-0 h-0"
+                            >
+                            {
+                                Industry.industrys.map((item) => (
+                                <div class="sub-menu-item group w-fit mt-2">
+                                    <a
+                                        href=`/industries?industry=${item.industry_url}#selector`
+                                        class="group-scoped"
+                                        >{item.industry}
+                                        <span
+                                            class="block h-[1px] w-[0px] group-scoped-hover:w-full ease-in-out duration-200 bg-gray-400"
+                                        ></span>
+                                    </a>
+                                </div>
+                                ))
+                            }
+                            </div>
+                        </div>
+                        <div class="text-xl">
+                            <button
+                                class="flex items-center gap-x-2 button-submenu"
+                            >
+                                Services<svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-4 w-4 text-foreground duration-500 ease-in-out"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path stroke-width="1.5" d="M19 9l-7 7-7-7"
+                                    ></path>
+                                </svg>
+                            </button>
+                            <div
+                                class="sub-menu text-base flex flex-col invisible opacity-0 h-0"
+                            >
+                            {
+                                Services.map((item) => (
+                                <div class="sub-menu-item w-fit mt-2">
+                                    <a
+                                        href={item.url}
+                                        class="group-scoped"
+                                        >{item.name}
+                                        <span
+                                            class="block h-[1px] w-[0px] group-scoped-hover:w-full ease-in-out duration-200 bg-gray-400"
+                                        ></span>
+                                    </a>
+                                </div>
+                                ))
+                            }
+                            </div>
+                        </div>
+                        <div class="text-xl">
+                            <a href="/about">About us</a>
+                        </div>
+                        <div class="text-xl">
+                            <a href="/case-studies">Case studies</a>
+                        </div>
+                        <li>
+                            <a href="/contact" class="text-xl">Get in touch</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="mt-8 mb-8 border border-white/10" />
+            </div>
+        </div>
+        <button title="Toggle menu" class="block lg:hidden toggle-menu">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5 close"
+            >
+                <path
+                    fill-rule="evenodd"
+                    d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+                    clip-rule="evenodd"></path>
+            </svg>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5 hidden open-close"
+                ><path
+                    d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"
+                ></path></svg
+            >
+        </button>
+    </div>
+</header>
+<script>
+    document.addEventListener("DOMContentLoaded", (e) => {
+        const toggleMenu =
+            document.querySelector<HTMLButtonElement>(".toggle-menu");
+        const menu = document.querySelector<HTMLDivElement>(".mobile-menu");
+        toggleMenu?.addEventListener("click", (e) => {
+            toggleMenu?.classList.toggle("active");
+            menu?.classList.toggle("active");
+            menu?.classList.toggle("opacity-0");
+            menu?.classList.toggle("invisible");
+            menu?.classList.toggle("translate-x-100");
+        });
+
+        const subMenuBtn = menu?.querySelectorAll("button.button-submenu");
+        subMenuBtn?.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+                const subMenu = btn.nextElementSibling;
+                subMenu?.classList.toggle("opacity-0");
+                subMenu?.classList.toggle("invisible");
+                subMenu?.classList.toggle("h-0");
+                subMenu?.classList.toggle("visible");
+                subMenu?.classList.toggle("opacity-100");
+                subMenu?.classList.toggle("h-full");
+            });
+        });
+    });
+</script>
+<style>
+    .group-scoped:hover span {
+        width: 100% !important;
+    }
+    .toggle-menu.active .close {
+        display: none;
+    }
+    .toggle-menu.active .open-close {
+        display: block !important;
+    }
+    .mobile-menu.active {
+        @apply translate-x-0;
+        @apply opacity-100;
+        @apply visible;
+    }
+</style>

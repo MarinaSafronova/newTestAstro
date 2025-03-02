@@ -1,0 +1,90 @@
+---
+import Data from "../../data/industry.json";
+---
+
+<footer class="bg-white border-t pt-20 pb-20">
+    <div class="grid grid-cols-4 gap-5 lg:grid-cols-12 container mx-auto">
+        <div class="col-span-3 flex flex-col gap-y-4">
+            <img
+                loading="lazy"
+                width="140px"
+                src="/logo.png"
+                alt="Simbased logo"
+                class="logo aspect-[236/31]"
+            />
+            <span class="text-muted-foreground text-sm mt-4">
+                © 2024 Simbased
+            </span>
+            <!-- socials -->
+            <div class="flex gap-x-3"></div>
+        </div>
+        <div class="col-span-2 lg:col-span-3">
+            <p class="mb-3 lg:mb-9 text-muted-foreground">Why Simbased?</p>
+            <ul class="flex flex-col gap-y-2 lg:gap-y-3">
+                <li>
+                    <a
+                        href="/about"
+                        class="text-foreground hover:text-primary duration-300 ease-in-out"
+                    >
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="/case-studies/case"
+                        class="text-foreground hover:text-primary duration-300 ease-in-out"
+                    >
+                        Case studies
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="/contact"
+                        class="text-foreground hover:text-primary duration-300 ease-in-out"
+                    >
+                        Contact us
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-span-2 lg:col-span-3">
+            <p class="mb-3 lg:mb-9 text-muted-foreground">Industries</p>
+            <ul class="flex flex-col gap-y-2 lg:gap-y-3">
+                {
+                    Data.industrys.map((item) => (
+                        <li>
+                            <a
+                                href=`/industries?industry=${item.industry_url}#selector`
+                                class="text-foreground hover:text-primary duration-300 ease-in-out"
+                            >
+                                {item.industry}
+                            </a>
+                        </li>
+                    ))
+                }
+               
+            </ul>
+        </div>
+        <div class="col-span-2 lg:col-span-3">
+            <p class="mb-3 lg:mb-9 text-muted-foreground">Policies</p>
+            <ul class="flex flex-col gap-y-2 lg:gap-y-3">
+                <li>
+                    <a
+                        href="/cookies.pdf"
+                        class="text-foreground hover:text-primary duration-300 ease-in-out"
+                    >
+                        Cookies policy
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="/terms.pdf"
+                        class="text-foreground hover:text-primary duration-300 ease-in-out"
+                    >
+                        Terms of use
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>

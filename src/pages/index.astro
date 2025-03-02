@@ -1,0 +1,398 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Picture, Image } from 'astro:assets';
+import HeroSlider from "../components/Home/HeroSlider.astro";
+import PartnerLogoSlider from "../components/Home/PartnerLogoSlider.astro";
+import FeaturedSlider from "../components/FeaturedSlider.astro";
+import Faq from "../components/Home/Faq.astro";
+import Data from "../data/industry.json";
+import Services from "../data/services.json";
+import Home from "../data/home.json";
+---
+
+<Layout title={Home.seo_title} desc={Home.seo_desc}>
+    <main class="overflow-x-hidden max-w-screen">
+        <div class="h-[60px] lg:h-[96px]"></div>
+        <HeroSlider />
+        <PartnerLogoSlider />
+        <!-- Add more images as needed -->
+        <!-- <div class="relative bg-background text-white overflow-hidden py-7 lg:py-9">
+<div
+class="absolute w-[100px] lg:w-[200px] h-full left-0 bg-gradient-to-r from-background via-background/90 to-transparent z-20 top-1/2 -translate-y-1/2"
+>
+</div>
+<div
+class="absolute w-[100px] lg:w-[200px] h-full right-0 bg-gradient-to-l from-background via-background/90 to-transparent z-20 top-1/2 -translate-y-1/2"
+>
+</div>
+<div class="marquee">
+<div class="marquee-content">
+  <div class="marquee-item">
+    <Picture
+      class="w-full h-full object-contain"
+      src={img1}
+      alt="Partner logo"
+    />
+  </div>
+  <div class="marquee-item">
+    <Picture
+      class="w-full h-full object-contain"
+      src={img2}
+      alt="Partner logo"
+    />
+  </div>
+  <div class="marquee-item">
+    <Picture
+      class="w-full h-full object-contain"
+      src={img3}
+      alt="Partner logo"
+    />
+  </div>
+  <div class="marquee-item">
+    <Picture
+      class="w-full h-full object-contain"
+      src={img4}
+      alt="Partner logo"
+    />
+  </div>
+  <div class="marquee-item">
+    <Picture
+      class="w-full h-full object-contain"
+      src={img5}
+      alt="Partner logo"
+    />
+  </div>
+  <div class="marquee-item">
+    <Picture
+      class="w-full h-full object-contain"
+      src={img6}
+      alt="Partner logo"
+    />
+  </div>
+  <div class="marquee-item">
+    <Picture
+      class="w-full h-full object-contain"
+      src={img7}
+      alt="Partner logo"
+    />
+  </div>
+</div>
+<div class="marquee-content">
+  <div class="marquee-item">
+    <Picture
+      class="w-full h-full object-contain"
+      src={img1}
+      alt="Partner logo"
+    />
+  </div>
+  <div class="marquee-item">
+    <Picture
+      class="w-full h-full object-contain"
+      src={img2}
+      alt="Partner logo"
+    />
+  </div>
+  <div class="marquee-item">
+    <Picture
+      class="w-full h-full object-contain"
+      src={img3}
+      alt="Partner logo"
+    />
+  </div>
+  <div class="marquee-item">
+    <Picture
+      class="w-full h-full object-contain"
+      src={img4}
+      alt="Partner logo"
+    />
+  </div>
+  <div class="marquee-item">
+    <Picture
+      class="w-full h-full object-contain"
+      src={img5}
+      alt="Partner logo"
+    />
+  </div>
+  <div class="marquee-item">
+    <Picture
+      class="w-full h-full object-contain"
+      src={img6}
+      alt="Partner logo"
+    />
+  </div>
+  <div class="marquee-item">
+    <Picture
+      class="w-full h-full object-contain"
+      src={img7}
+      alt="Partner logo"
+    />
+  </div>
+</div>
+</div>
+</div>
+
+<style>
+.marquee {
+display: flex;
+overflow: hidden;
+width: 100%;
+
+}
+
+.marquee-content {
+display: flex;
+animation: marquee 60s linear infinite;
+width: 100%;
+/* margin-right: 100px; */
+}
+
+.marquee-item {
+flex: 0 0 auto;
+width: 150px;
+border: 1px solid #fff;
+height: 60px;
+/* margin-right: 100px; */
+
+@media (max-width: 768px) {
+  width: 120px;
+  height: 60px;
+  /* margin-right: 50px; */
+}
+}
+
+@keyframes marquee {
+0% {
+  transform: translateX(0);
+}
+100% {
+  transform: translateX(-100%);
+}
+}
+</style> -->
+        <section class="section-t-padding lg:pb-32">
+            <div class="container">
+                <h2
+                    style="
+                        background-image: linear-gradient(
+                            90deg,
+                            #0b9d6c -6.7%,
+                            #319ea6 36.1%,
+                            #7da9ff 112.45%
+                        );
+                    "
+                    class="text-transparent bg-clip-text"
+                >
+                    {Home.industry_title}
+                </h2>
+                <p class="text-muted-foreground lg:text-lg mt-1">
+                    {Home.industry_desc}
+                </p>
+            </div>
+            <div
+                class="sm:max-w-[640px] md:max-w-3xl lg:max-w-[1100px] xl:max-w-[1400px] 2xl:max-w-[1400px] mx-auto grid grid-cols-2 lg:flex lg:flex-wrap   mt-7 lg:mt-12 lg:px-5 2xl:px-0"
+            >
+            {
+                Data.industrys.map((item) => (
+                <a
+                    href=`/industries?industry=${item.industry_url}#selector`
+                    class="h-[200px] overflow-hidden relative lg:h-[280px] w-full lg:w-[calc(100%/3)] shrink basis-[calc(100%/3)] box-border group"
+                >
+                    <div
+                        class="w-full flex p-3 lg:p-7 items-end absolute z-20 h-full bg-background/80 left-0 top-0 group-hover:bg-primary/80 duration-300 ease-in-out"
+                    >
+                        <p
+                            class="text-white leading-[1.25rem] text-lg lg:text-2xl"
+                        >
+                            {item.industry}
+                        </p>
+                    </div>
+                    <Picture
+                        src={item.index_background_picture}
+                        class="absolute top-0 z-0 left-0 object-cover w-full h-full group-hover:scale-105 duration-500"
+                        alt={item.industry}
+                        width="897"
+                        height="537"
+                        loading="lazy"
+                        decoding="async"
+                        formats={["png", "webp"]}
+                    />
+                    <Picture
+                        src={item.index_foreground_picture}
+                        class="object-contain absolute h-full w-[40%] right-0 z-50"
+                        alt={item.industry}
+                        width="746"
+                        height="511"
+                        loading="lazy"
+                        decoding="async"
+                        formats={["png", "webp"]}
+                    />
+                </a>
+                ))
+            }
+                
+                <div
+                    style="
+                        background: linear-gradient(
+                            113.5deg,
+                            #374963 8.8%,
+                            #131f31 80.2%
+                        );
+                    "
+                    class="p-6 lg:p-8 lg:px-12 text-lg font-medium text-white flex justify-center w-auto flex-col gap-y-4 lg:basis-auto lg:flex-auto"
+                >
+                    <span class="leading-[1.25rem] lg:text-2xl"
+                        >Can’t find your<br />
+                        industry here?</span
+                    >
+                    <a
+                        href="/contact"
+                        class="px-5 lg:px-7 text-sm w-fit items-start py-3 lg:py-3.5 flex gap-x-3 hover:ring-2 hover:ring-primary hover:ring-opacity-50 duration-300 bg-white text-black"
+                    >
+                        Get in touch
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section-y-padding border-t bg-zinc-50">
+            <div class="container">
+                <h2
+                    style="
+                        background-image: linear-gradient(
+                            90deg,
+                            #0b9d6c -6.7%,
+                            #319ea6 36.1%,
+                            #7da9ff 112.45%
+                        );
+                    "
+                    class="text-transparent bg-clip-text"
+                >
+                    {Home.solutions_title}
+                </h2>
+                <p class="text-muted-foreground lg:text-lg mt-1 max-w-2xl">
+                    {Home.solutions_desc}
+                </p>
+            </div>
+            <div
+                class="container mt-7 lg:mt-12 grid grid-cols-1 lg:grid-cols-2 gap-5 overflow-x-hidden"
+            >
+            {
+                Services.map((item) => (
+                <a href={item.url} class="group">
+                    <div class="w-full aspect-[1.74] overflow-hidden">
+                        <Image
+                            src={item.image_index}
+                            class="w-full object-cover group-hover:scale-105 duration-500 ease-in-out h-full"
+                            alt="Numerical simulations preview image"
+                            width="100"
+                            height="100"
+                        />
+                    </div>
+                    <div
+                        style="background-image: url('/bgs/darkbg 4.png')"
+                        class="bg-foreground p-5 lg:p-10"
+                    >
+                        <div
+                            class="flex items-center lg:mb-1 justify-between w-full"
+                        >
+                            <h2
+                                class="text-2xl font-normal lg:text-4xl text-white text-nowrap"
+                            >
+                                {item.name}
+                            </h2>
+                            <svg
+                                class="shrink-0 w-7 lg:w-10 aspect-square"
+                                viewBox="0 0 41 41"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect
+                                    width="40.3376"
+                                    height="40.3376"
+                                    fill="url(#paint0_linear_2_939)"></rect>
+                                <path
+                                    d="M13.5872 27.5989L27.6363 13.5497"
+                                    stroke="#F3EFE5"
+                                    stroke-width="1.58488"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M28.2046 26.3219V13.2658"
+                                    stroke="#F3EFE5"
+                                    stroke-width="1.58488"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M13.4441 12.9814H28.2024"
+                                    stroke="#F3EFE5"
+                                    stroke-width="1.58488"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <defs>
+                                    <linearGradient
+                                        id="paint0_linear_2_939"
+                                        x1="20.1688"
+                                        y1="6.16268"
+                                        x2="61.6268"
+                                        y2="53.2232"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop stop-color="#1F9BA4"></stop>
+                                        <stop offset="1" stop-color="#4744DE"
+                                        ></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p class="text-white/80 text-sm lg:text-lg font-normal">
+                        </p>
+                    </div>
+                </a>
+                ))
+            }
+            </div>
+        </section>
+        <FeaturedSlider />
+        <Faq />
+        <section
+            style="
+                background-image: url('/bgs/color-bg 2.png');
+                background-size: cover;
+                background-position: center;
+            "
+            class="bg-primary py-12 lg:py-20"
+        >
+            <div class="container">
+                <h2 class="text-white mb-6 lg:mb-7 max-w-xs lg:max-w-xl">
+                    Level up your products with Simbased
+                </h2>
+                <a
+                    href="/contact"
+                    class="px-5 lg:px-7 text-sm w-fit items-start py-3 lg:py-3.5 flex gap-x-3 hover:ring-2 hover:ring-primary hover:ring-opacity-50 duration-300 bg-white text-black"
+                >
+                    <span>Get in touch</span>
+                    <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M1 18.4059L12.9944 6.39343"
+                            stroke="black"
+                            stroke-opacity="0.9"
+                            stroke-width="1.7"></path>
+                        <path
+                            d="M13.0277 6.49352C13.4968 6.49352 13.877 6.11268 13.877 5.64288C13.877 5.17308 13.4968 4.79224 13.0277 4.79224L13.0277 6.49352ZM1.75895 6.49352H13.0277L13.0277 4.79224H1.75895L1.75895 6.49352Z"
+                            fill="black"
+                            fill-opacity="0.9"></path>
+                        <path
+                            d="M13.877 6.39338C13.877 5.92358 13.4968 5.54273 13.0277 5.54273C12.5586 5.54273 12.1783 5.92358 12.1783 6.39338L13.877 6.39338ZM13.877 17.6791V6.39338L12.1783 6.39338V17.6791L13.877 17.6791Z"
+                            fill="black"
+                            fill-opacity="0.9"></path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+</Layout>

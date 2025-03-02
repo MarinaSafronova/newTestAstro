@@ -1,0 +1,240 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Picture } from "astro:assets";
+import FeaturedSlider from "../components/FeaturedSlider.astro";
+import Data from "../data/about.json";
+---
+
+<Layout title={Data.seo_title} desc={Data.seo_desc}>
+    <div class="h-[60px] lg:h-[96px]"></div>
+    <section
+        id="el-hero"
+        class="w-screen h-[calc(100vh-60px)] lg:h-[calc(100vh-96px)] bg-cover bg-blend-multiply bg-no-repeat bg-right-bottom overflow-x-hidden max-w-screen relative isolate"
+    >
+        <div
+            class="left-1/2 bottom-[16%] lg:bottom-[8%] transform w-full container -translate-x-1/2 overflow-visible absolute flex items-end md:items-center py-5 z-30"
+        >
+            <div class="text-white overflow-hidden">
+                <div class="hidden md:flex gap-x-3 items-center"></div>
+                <div class="my-7 md:my-2"></div>
+                <h1 id="hero-title" class="font-medium text-white max-w-xl">
+                    <span
+                        >{Data.page}
+                        <span
+                            style="
+                                    background-image: linear-gradient(
+                                        90deg,
+                                        #0b9d6c -6.7%,
+                                        #319ea6 36.1%,
+                                        #7da9ff 112.45%
+                                    );
+                                "
+                            class="text-transparent bg-clip-text"
+                            >{Data.title}</span
+                        ></span
+                    >
+                </h1>
+                <p
+                    class="leading-[1.5rem] text-[1.02rem] md:text-lg max-w-[340px] text-white/90 lg:max-w-2xl mt-2"
+                >
+                    {Data.desc}
+                </p>
+            </div>
+        </div>
+        <div class="absolute w-full z-10 h-full top-0 left-0 gradient-hero">
+        </div>
+        <Picture
+            src={Data.bg_hero}
+            loading="eager"
+            alt="Hero image"
+            class="object-cover w-full h-full z-0 object-[65%,50%]"
+            width="4096"
+            height="2332"
+            decoding="async"
+            formats={["png", "webp"]}
+        />
+    </section>
+    <section class="section-y-padding">
+        <div
+            class="container grid items-center grid-cols-1 gap-10 lg:grid-cols-2"
+        >
+            <div class="flex flex-col max-w-xl">
+                <p class="preheader mb-2">About us</p>
+                <h2 class="mb-5">
+                    {Data.trust_title}
+                </h2>
+                <p class="text-muted-foreground lg:text-lg mb-7">
+                    {Data.trust_desc}
+                </p>
+                <a
+                    href="/contact"
+                    class="px-5 lg:px-7 text-sm w-fit items-start py-3 lg:py-3.5 flex gap-x-3 hover:ring-2 hover:ring-primary hover:ring-opacity-50 duration-300 bg-gradient-to-r from-[#1FA48C] via-[#1F9BA4] to-[#1F6CA4] text-white"
+                >
+                    <span>Get in touch</span>
+                    <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M1 18.4059L12.9944 6.39343"
+                            stroke="white"
+                            stroke-opacity="0.9"
+                            stroke-width="1.7"></path>
+                        <path
+                            d="M13.0277 6.49352C13.4968 6.49352 13.877 6.11268 13.877 5.64288C13.877 5.17308 13.4968 4.79224 13.0277 4.79224L13.0277 6.49352ZM1.75895 6.49352H13.0277L13.0277 4.79224H1.75895L1.75895 6.49352Z"
+                            fill="white"
+                            fill-opacity="0.9"></path>
+                        <path
+                            d="M13.877 6.39338C13.877 5.92358 13.4968 5.54273 13.0277 5.54273C12.5586 5.54273 12.1783 5.92358 12.1783 6.39338L13.877 6.39338ZM13.877 17.6791V6.39338L12.1783 6.39338V17.6791L13.877 17.6791Z"
+                            fill="white"
+                            fill-opacity="0.9"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="w-full aspect-[1.3]">
+                <Picture
+                    src={Data.trust_img}
+                    alt="Numerical simulation render"
+                    class="object-cover w-full h-full"
+                    loading="lazy"
+                    width="897"
+                    height="897"
+                    formats={["png", "webp"]}
+                />
+            </div>
+        </div>
+    </section>
+    <section
+        style="
+                background-image: url('/bgs/darkbg 2.png');
+                background-size: cover;
+                background-position: center;
+            "
+        class="text-white section-y-padding overflow-x-hidden max-w-[100vw]"
+    >
+        <div
+            class="container grid grid-cols-1 lg:grid-cols-2 gap-y-14 gap-x-20"
+        >
+            <div class="">
+                <h2 class="text-white max-w-xs">{Data.stats_title}</h2>
+            </div>
+            <div class="grid grid-cols-2 gap-12 lg:gap-14">
+                <div class="max-w-[250px]">
+                    <p class="text-6xl lg:text-8xl font-medium">
+                        {Data.industry_number}+
+                    </p>
+                    <p class="text-sm lg:text-base">
+                        {Data.industry_title}
+                    </p>
+                </div>
+                <div class="max-w-[250px]">
+                    <p class="text-6xl lg:text-8xl font-medium">
+                        {Data.completed_projects}+
+                    </p>
+                    <p class="text-sm lg:text-base">
+                        {Data.completed_title}
+                    </p>
+                </div>
+                <div class="max-w-[250px]">
+                    <p class="text-6xl lg:text-8xl font-medium">
+                        {Data.satisfied_clients}+
+                    </p>
+                    <p class="text-sm lg:text-base">{Data.satisfied_title}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-y-padding border">
+        <div class="container mb-8 lg:mb-10">
+            <p class="preheader">About us</p>
+            <h2>{Data.team_title}</h2>
+        </div>
+        <div
+            class="container grid grid-cols-1 gap-y-7 lg:grid-cols-3 lg:gap-24"
+        >
+            {
+                Data.team_members.map((item) => (
+                    <div>
+                        <div class="w-full aspect-[9/10] bg-zinc-200">
+                            <Picture
+                                src={item.image}
+                                alt="Uroš Rožič, MSc headshot"
+                                class="object-cover w-full h-full"
+                                width="500"
+                                height="500"
+                                formats={["png", "webp"]}
+                            />
+                        </div>
+                        <h5 class="text-xl text-foreground mt-6">
+                            {item.name}
+                        </h5>
+                        <p class="text-muted-foreground text-lg mb-5">
+                            {item.role}
+                        </p>
+                        <p class="text-muted-foreground text-base text-left">
+                            {item.desc}
+                        </p>
+                    </div>
+                ))
+            }
+        </div>
+    </section>
+    <FeaturedSlider />
+    <section
+        style="
+                background-image: url('/bgs/color-bg 2.png');
+                background-size: cover;
+                background-position: center;
+            "
+        class="bg-primary py-12 lg:py-20"
+    >
+        <div class="container">
+            <h2 class="text-white mb-6 lg:mb-7 max-w-xs lg:max-w-xl">
+                Level up your products with Simbased
+            </h2>
+            <a
+                href="/contact"
+                class="px-5 lg:px-7 text-sm w-fit items-start py-3 lg:py-3.5 flex gap-x-3 hover:ring-2 hover:ring-primary hover:ring-opacity-50 duration-300 bg-white text-black"
+            >
+                <span>Get in touch</span>
+                <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M1 18.4059L12.9944 6.39343"
+                        stroke="black"
+                        stroke-opacity="0.9"
+                        stroke-width="1.7"></path>
+                    <path
+                        d="M13.0277 6.49352C13.4968 6.49352 13.877 6.11268 13.877 5.64288C13.877 5.17308 13.4968 4.79224 13.0277 4.79224L13.0277 6.49352ZM1.75895 6.49352H13.0277L13.0277 4.79224H1.75895L1.75895 6.49352Z"
+                        fill="black"
+                        fill-opacity="0.9"></path>
+                    <path
+                        d="M13.877 6.39338C13.877 5.92358 13.4968 5.54273 13.0277 5.54273C12.5586 5.54273 12.1783 5.92358 12.1783 6.39338L13.877 6.39338ZM13.877 17.6791V6.39338L12.1783 6.39338V17.6791L13.877 17.6791Z"
+                        fill="black"
+                        fill-opacity="0.9"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .gradient-hero {
+        @media (min-width: 1024px) {
+            background: linear-gradient(29.27deg, #050820 18.84%, #0000 75.39%);
+        }
+        background: linear-gradient(
+            31.32deg,
+            #0b192de6 37.52%,
+            #24385400 90.66%
+        );
+    }
+</style>

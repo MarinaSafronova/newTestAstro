@@ -1,0 +1,291 @@
+
+{
+    "page": "Industries",
+    "seo_title": "Simbased | Industries we serve",
+    "seo_desc": "Simbased specializes in product design and advanced simulations, offering a competitive edge with better, reliable products at lower costs and faster time to market.",
+    "title": "we serve",
+    "desc": "Explore the diverse range of industries supported by Simbased.",
+    "bg_hero": "/images/home/pipe2.png",
+    "industrys": [
+        {
+            "industry": "Automotive",
+            "industry_url": "automotive",
+            "logo_indusri_logo": "/icons/spanner.svg",
+            "index_background_picture": "/images/home/auto-bg.png",
+            "index_foreground_picture": "/images/home/auto-float.png",
+            "industry_content_bg": "/IndBg/automotive.png",
+            "industry_blocks": [
+                {
+                    "industry_block": "We leverage years of experience collaborating with leading OEMs to deliver cutting-edge solutions driven by Computer Aided Engineering. We understand the unique challenges you face, and we're here to help you optimize your development process through the power of simulations.",
+                    "industry_block_details": []
+                },
+                {
+                    "industry_block": "Our comprehensive suite of services empowers you to:",
+                    "industry_block_details": [
+                        "Boost design flexibility: Explore a wider range of design options virtually, saving time and resources.",
+                        "Reduce physical prototypes: Gain valuable insights without the need for expensive physical testing.",
+                        "Accelerate time to market: Get your innovative designs to market faster, staying ahead of the competition."
+                    ]
+                },
+                {
+                    "industry_block": "We specialize in a range of critical automotive engineering services, including:",
+                    "industry_block_details": [
+                        "Structural analysis: Optimize the strength and integrity of chassis and panels.",
+                        "Crash testing: Virtually simulate crash scenarios to ensure passenger safety.",
+                        "NVH analysis: Minimize noise, vibration, and harshness for a superior driving experience.",
+                        "Thermal management systems: Design efficient cooling systems for optimal performance.",
+                        "Electric propulsion systems: Optimize your electric powertrain to increase efficiency and durability of the system."
+                    ]
+                }
+            ],
+            "analyses_list": [
+                "Non-linear structural analysis",
+                "Dynamic simulations",
+                "Crash analysis",
+                "Fatigue",
+                "Thermal analysis",
+                "Electromagnetic simulations",
+                "Manufacturing processes",
+                "Computational fluid dynamics"
+            ]
+        },
+        {
+            "industry": "Aerospace",
+            "industry_url": "aerospace",
+            "logo_indusri_logo": "/icons/plane.svg",
+            "index_background_picture": "/images/home/ae-bg.png",
+            "index_foreground_picture": "/images/home/ae-float.png",
+            "industry_content_bg": "/IndBg/aerospace.png",
+            "industry_blocks": [
+                {
+                    "industry_block": "We bring together expertise in lightweight design, composite materials and computational fluid dynamics (CFD) to support your project. We understand the critical need for optimized structures that ensure both reliability and safety while achieving exceptional aerodynamic efficiency.",
+                    "industry_block_details": []
+                },
+                {
+                    "industry_block": "Our combined expertise empowers you to:",
+                    "industry_block_details": [
+                        "Optimize structural integrity: Utilize advanced simulations to design lightweight yet robust composite structures, minimizing weight and maximizing performance.",
+                        "Streamline design iterations: Explore diverse configurations virtually, saving time and resources compared to traditional physical testing methods.",
+                        "Peak aerodynamic efficiency: Leverage CFD simulations to minimize drag and fuel consumption, significantly reducing operational costs."
+                    ]
+                },
+                {
+                    "industry_block": "Our approach focuses on:",
+                    "industry_block_details": [
+                        "Lightweight design: Utilizing topology and sizing optimization under various operating conditions to find the best solution under any load.",
+                        "Optimizing ply thickness, fiber orientation, and stack layup: Utilizing advanced tools to create lightweight and structurally sound composite structures.",
+                        "Aerodynamic performance: Accurately predicting airflow behavior around your design for superior performance and fuel efficiency."
+                    ]
+                }
+            ],
+    
+            "analyses_list": [
+                "Non-linear structural analysis",
+                "Computational fluid dynamics",
+                "Composite material analysis",
+                "Lightweight optimization",
+                "Fatigue",
+                "Manufacturing processes"
+            ]
+        },
+        {
+            "industry": "Energy and Transport",
+            "industry_url": "energy-and-transport",
+            "logo_indusri_logo": "/icons/earth.svg",
+            "index_background_picture": "/images/home/en-bg.png",
+            "index_foreground_picture": "/images/home/en-float.png",
+            "industry_content_bg": "/IndBg/energy.png",
+            "industry_blocks": [
+                {
+                    "industry_block": "Energy consumption and environmental impact, are two of the key challenges of modern engineering. At SIMBASED, we work closely with energy industry in fields of water and wind turbines. With the use of FEA and CFD, we make sure these energy systems operate in a safe, reliable and efficient way. Besides the design of the turbines, we can also help you when designing and analyzing efficient electric propulsion systems. In the field of environmental engineering, we have great experiences in analysis of water and waste treatment. Using our design and CFD capabilities, we are able to work on research and development of pumps, compressors and heat exchangers. We understand the critical challenges of energy consumption and environmental impact. We are dedicated to working closely with the energy industry, specifically in the fields of water and wind energy, to develop sustainable and efficient solutions.",
+                    "industry_block_details": []
+                },
+                {
+                    "industry_block": "Leveraging the power of FEA and CFD, we help you achieve:",
+                    "industry_block_details": [
+                        "Optimized performance: Ensure your energy systems operate safely, reliably, and efficiently, maximizing energy output and minimizing environmental impact.",
+                        "Streamlined design: Utilize advanced simulations to optimize turbine design and reduce physical prototypes, saving time and resources.",
+                        "Advanced electric propulsion systems: Benefit from our expertise in designing and analyzing efficient electric propulsion systems for next-generation solutions."
+                    ]
+                },
+                {
+                    "industry_block": "Beyond wind and water, our expertise extends to:",
+                    "industry_block_details": [
+                        "Pump, compressor, and heat exchanger development: Our design and CFD capabilities empower us to research and develop efficient components for various applications.",
+                        "Environmental engineering: We offer extensive experience in water and waste treatment analysis, contributing to cleaner water resources and waste management solutions."
+                    ]
+                }
+            ],
+    
+            "analyses_list": [
+                "Conjugate heat transfer",
+                "Non-linear structural analysis",
+                "Electromagnetic simulations",
+                "Manufacturing processes",
+                "Bulk material analysis",
+                "Computational fluid dynamics"
+            ]
+        },
+        {
+            "industry": "Consumer Products",
+            "industry_url": "consumer-products",
+            "logo_indusri_logo": "/icons/bag.svg",
+            "index_background_picture":"/images/home/cp-bg.png",
+            "index_foreground_picture": "/images/home/cp-float.png",
+            "industry_desc": "",
+            "industry_content_bg": "/IndBg/consumerproducts.png",
+            "industry_blocks": [
+                {
+                    "industry_block": "At Simbased, we leverage the latest in 3D CAD modeling, featuring parametric design and advanced surfacing, to transform your product ideas into reality. This empowers you to:",
+                    "industry_block_details": [
+                        "Design and virtually test your products in a digital environment, saving time and resources compared to traditional physical prototyping.",
+                        "Integrate analysis and simulation early in the design process, identifying potential issues and optimizing performance for a competitive edge."
+                    ]
+                },
+                {
+                    "industry_block": "Our commitment extends beyond creating a 3D model, recognizing that successful product realization requires more. We seamlessly integrate design for manufacturability (DFM) principles throughout the process, ensuring your product is:",
+                    "industry_block_details": [
+                        "Easy and cost-effective to manufacture",
+                        "Engineered for reliable operation"
+                    ]
+                },
+                {
+                    "industry_block": "Furthermore, our extensive knowledge of injection molding, stamping, CNC machining and other manufacturing processes allows us to achieve this by:",
+                    "industry_block_details": [
+                        "Selecting the optimal manufacturing process based on your product's specific needs.",
+                        "Designing components with manufacturability in mind, minimizing production complexities and costs.",
+                        "Utilizing advanced simulation tools to predict and address potential manufacturing challenges, ensuring a smooth transition from design to production."
+                    ]
+                }
+            ],
+    
+            "analyses_list": [
+                "Electromagnetic simulations",
+                "Manufacturing processes",
+                "Non-linear structural analysis",
+                "Conjugate heat transfer",
+                "Computational fluid dynamics"
+            ]
+        },
+        {
+            "industry": "Structural Engineering",
+            "industry_url": "structural-engineering",
+            "logo_indusri_logo": "/icons/spanner.svg",
+            "index_background_picture": "/images/home/se-bg.png",
+            "index_foreground_picture": "/images/home/se-float.png",
+            "industry_desc": "",
+            "industry_content_bg": "/IndBg/structuralengineering.png",
+            "industry_blocks": [
+                {
+                    "industry_block": "Structural engineering is the core of our expertise, having more than two decades of experience in optimization of structures using nonlinear structural simulations. Our deep understanding of continuum mechanics enables us to provide our customers with solutions tailored to their specifications.",
+                    "industry_block_details": []
+                },
+                {
+                    "industry_block": "Our comprehensive services enable you to:",
+                    "industry_block_details": [
+                        "Unlock the full potential of your designs: Through advanced simulations, we go beyond linear analysis, allowing you to explore the nonlinear behavior of structures under real-world conditions pre and post its critical loads.",
+                        "Optimize stiffness and functionality: Gain valuable insights to refine your designs, ensuring optimal performance and achieving the desired balance between strength and functionality.",
+                        "Reduce material usage and costs: By accurately predicting structural behavior, we help you optimize material properties, leading to cost savings and a more sustainable footprint."
+                    ]
+                },
+                {
+                    "industry_block": "Our expertise extends to a wide range of applications, including:",
+                    "industry_block_details": [
+                        "Engineering design and mechanics: The key to any good product is understanding its behavior under real-world loads and optimizing it for specific functions",
+                        "Civil engineering: We provide insights into the behavior of construction structures and other critical infrastructure, contributing to their safety, durability and compliance with local design codes."
+                    ]
+                },
+                {
+                    "industry_block": "Unlock the full potential of your project with our team of experienced engineers!",
+                    "industry_block_details": []
+                }
+            ],
+    
+            "analyses_list": [
+                "Non-linear structural analysis",
+                "Dynamic simulations",
+                "Fatigue",
+                "Thermal analysis",
+                "Manufacturing processes"
+            ]
+        },
+        {
+            "industry": "Electronics",
+            "industry_url": "electronics",
+            "logo_indusri_logo": "/icons/chip.svg",
+            "index_background_picture": "/images/home/elec-bg.png",
+            "index_foreground_picture": "/images/home/elec-float.png",
+            "industry_desc": "",
+            "industry_content_bg": "/IndBg/Electronics.png",
+            "industry_blocks": [
+                {
+                    "industry_block": "We are passionate about driving innovation in the ever-evolving field of electrification. We understand the growing demand for sustainable solutions across various industries and are dedicated to providing comprehensive design and analysis services for propulsion systems.",
+                    "industry_block_details": []
+                },
+                {
+                    "industry_block": "Our electrification expertise encompasses:",
+                    "industry_block_details": [
+                        "Electric machine design and analysis: We delve into electromagnetic, structural, NVH (Noise, Vibration, Harshness), and thermal analysis, ensuring optimal performance and efficiency.",
+                        "Addressing automotive NVH challenges: We possess the expertise to tackle complex NVH issues in the automotive sector, creating quieter and more comfortable driving experiences.",
+                        "Pushing boundaries with advanced cooling concepts: We stay at the forefront of innovative cooling solutions like oil-spray cooling, maximizing the power density of electric machines."
+                    ]
+                },
+                {
+                    "industry_block": "Beyond electric powertrains, we offer:",
+                    "industry_block_details": [
+                        "Power electronics analysis: We provide detailed structural and thermal analysis of power electronics systems, ensuring their longevity and reliability.",
+                        "Battery analysis: We offer in-depth analysis of battery systems, considering factors like thermal management and structural integrity."
+                    ]
+                }
+            ],
+    
+            "analyses_list": [
+                "Electromagnetic simulations",
+                "Thermal analysis",
+                "Manufacturing processes",
+                "Non-linear structural analysis",
+                "Computational fluid dynamics"
+            ]
+        },
+        {
+            "industry": "Process engineering",
+            "industry_url": "process-engineering",
+            "logo_indusri_logo": "/icons/earth.svg",
+            "index_background_picture": "/images/home/mine-bg.png",
+            "index_foreground_picture": "/images/home/mine-float.png",
+            "industry_content_bg": "/IndBg/oilandgas.png",
+            "industry_blocks": [
+                {
+                    "industry_block": "We empower process industries like food, chemical, oil & gas, and mining to achieve peak performance with our comprehensive suite of engineering and simulation services.",
+                    "industry_block_details": []
+                },
+                {
+                    "industry_block": "We delve into the heart of your processes, analyzing and optimizing critical factors such as:",
+                    "industry_block_details": [
+                        "Heat management: With conjugate heat transfer analysis we predict and control heat losses and harmful heat distribution.",
+                        "Structural integrity: We analyze equipment and vessels to ensure they can withstand operational loads and pressures, guaranteeing safe and reliable operation.",
+                        "Fluid flow behavior: We optimize fluid flow patterns to enhance mixing, reaction times, and overall process efficiency.",
+                        "Material transport: We analyze material movement within your process, identifying bottlenecks and optimizing transport systems for increased throughput."
+                    ]
+                },
+                {
+                    "industry_block": "Benefits you can expect:",
+                    "industry_block_details": [
+                        "Enhanced process efficiency: Achieve optimal performance through data-driven insights and optimized process parameters.",
+                        "Improved product quality: Ensure consistent and high-quality products by maintaining precise control over heat distribution and mixing processes.",
+                        "Reduced operating costs: Minimize energy consumption and equipment wear through optimized performance and efficient resource utilization.",
+                        "Enhanced safety: Mitigate risks by identifying potential structural weaknesses and optimizing for safe operation."
+                    ]
+                }
+            ],
+    
+            "analyses_list": [
+                "Thermal analysis",
+                "Non-linear structural analysis",
+                "Bulk material analysis",
+                "Computational fluid dynamics"
+            ]
+        }
+        
+    ]
+}

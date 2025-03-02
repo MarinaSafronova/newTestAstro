@@ -1,0 +1,367 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Picture } from "astro:assets";
+import FeaturedSlider from "../components/FeaturedSlider.astro";
+const currentUrl = Astro.url;
+import Data from "../data/industry.json";
+---
+
+<Layout
+    title={Data.seo_title}
+    desc={Data.seo_desc}
+>
+    <div class="h-[60px] lg:h-[96px]"></div>
+    <section
+        id="el-hero"
+        class="w-screen h-[calc(100vh-60px)] lg:h-[calc(100vh-96px)] bg-cover bg-blend-multiply bg-no-repeat bg-right-bottom overflow-x-hidden max-w-screen relative isolate"
+    >
+        <div
+            class="left-1/2 bottom-[16%] lg:bottom-[8%] transform w-full container -translate-x-1/2 overflow-visible absolute flex items-end md:items-center py-5 z-30"
+        >
+            <div class="text-white overflow-hidden">
+                <div class="hidden md:flex gap-x-3 items-center"></div>
+                <div class="my-7 md:my-2"></div>
+                <h1 id="hero-title" class="font-medium text-white max-w-xl">
+                    <span
+                        style="
+                                background-image: linear-gradient(
+                                    90deg,
+                                    #0b9d6c -6.7%,
+                                    #319ea6 36.1%,
+                                    #7da9ff 112.45%
+                                );
+                            "
+                        class="text-transparent bg-clip-text">{Data.page}</span
+                    >
+                    <span>{Data.title}</span>
+                </h1>
+                <p
+                    class="leading-[1.5rem] text-[1.02rem] md:text-lg max-w-[340px] text-white/90 lg:max-w-2xl mt-2"
+                >
+                    {Data.desc}
+                </p>
+            </div>
+        </div>
+        <div class="absolute w-full z-10 h-full top-0 left-0 gradient-hero">
+        </div>
+        <Picture
+            src={Data.bg_hero}
+            loading="eager"
+            alt="Hero image"
+            class="object-cover w-full h-full z-0 object-[65%,50%]"
+            width="3024"
+            height="1594"
+            decoding="async"
+            formats={["png", "webp"]}
+        />
+    </section>
+
+    <section
+        style="background-image: url('/bgs/06 3.png');"
+        class="py-20 lg:py-32 bg-zinc-100"
+        id="selector"
+    >
+        <div class="container mb-10">
+            <h2>
+                Select your
+                <span
+                    style="
+                            background-image: linear-gradient(
+                                90deg,
+                                #0b9d6c -6.7%,
+                                #319ea6 36.1%,
+                                #7da9ff 112.45%
+                            );
+                        "
+                    class="bg-clip-text text-transparent">industry</span
+                >
+            </h2>
+        </div>
+        <div class="container">
+            <div
+                class="navs-mobile-screen flex top-0 left-0 mb-3 z-10 overflow-x-auto gap-2 lg:hidden"
+            >
+                {
+                    Data.industrys.map((item) => (
+                        <button
+                            role="tab"
+                            data-tab-mobile={item.industry_url}
+                            class="tabs-nav-mobile p-4 text-left duration-300 shrink-0 ease-in-out border-b text-muted-foreground bg-white border-l-8 border-tran"
+                        >
+                            {item.industry}
+                        </button>
+                    ))
+                }
+            </div>
+            <div class="flex w-full bg-white border min-h-[750px]">
+                <div
+                    style="box-shadow: 10px 0px 20px 0px #40404020"
+                    class="tabs-nav max-w-[280px] min-w-[280px] border-r flex-col hidden lg:flex overflow-y-auto"
+                >
+                    {
+                        Data.industrys.map((item) => (
+                            <button
+                                role="tab"
+                                data-tab={item.industry_url}
+                                class="header-tab p-4 pl-6 text-left duration-300 ease-in-out border-b text-muted-foreground"
+                            >
+                                {item.industry}
+                            </button>
+                        ))
+                    }
+                    <div class="flex-grow"></div>
+                    <a
+                        href="/contact"
+                        class="p-3 text-center border m-2 bg-primary text-white"
+                        >Get in touch</a
+                    >
+                </div>
+                {
+                    Data.industrys.map((item) => (
+                        <div
+                            data-content={item.industry_url}
+                            style=`
+                                background-image: url(${item.industry_content_bg});
+                                background-size: cover;
+                                background-position: right;
+                            `
+                            class="tabcontent p-8 lg:p-14 w-full"
+                        >
+                            <div class="col-span-1">
+                                <h4 class="mb-4">{item.industry}</h4>
+                                <div class="prose prose-sm min-w-full text-muted-foreground">
+                                   {
+                                    item.industry_blocks.map((block) => (
+                                        <p>{block.industry_block}</p>
+                                        <ul>
+                                            {
+                                                block.industry_block_details.map((detail) => (
+                                                    <li>{detail}</li>
+                                                ))
+                                            }
+                                        </ul>
+                                    ))
+                                   }
+                                </div>
+                                <h5 class="mb-4 mt-10">Our analyses</h5>
+                                <ul class="w-full gap-5 grid grid-cols-1 lg:grid-cols-3">
+                                    {
+                                        item.analyses_list.map((analysis) => (
+                                        <li class="flex text-muted-foreground gap-3">
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            class="shrink-0"
+                                            viewBox="0 0 20 20"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <g clip-path="url(#clip0_2_1638)">
+                                                <path
+                                                    opacity="0.15"
+                                                    d="M9.59155 19.183C14.8888 19.183 19.1831 14.8888 19.1831 9.59149C19.1831 4.29422 14.8888 -6.10352e-05 9.59155 -6.10352e-05C4.29428 -6.10352e-05 0 4.29422 0 9.59149C0 14.8888 4.29428 19.183 9.59155 19.183Z"
+                                                    fill="#0A9A95"
+                                                />
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M13.6797 5.91082L7.96077 11.438L6.4501 9.80739C6.30722 9.68274 6.12634 9.61015 5.93693 9.60144C5.74752 9.59273 5.56074 9.64842 5.40702 9.75943C5.2583 9.86391 5.15381 10.02 5.11391 10.1973C5.07401 10.3747 5.10157 10.5605 5.19121 10.7186L6.98963 13.656C7.16947 13.9198 7.48119 14.0876 7.8169 14.0876C8.1526 14.0876 8.45234 13.9198 8.63218 13.656C8.91993 13.2843 14.4111 6.7261 14.4111 6.7261C15.1305 6.00673 14.2552 5.34731 13.6917 5.91082H13.6797Z"
+                                                    fill="#0A9A95"
+                                                />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_2_1638">
+                                                    <rect
+                                                        width="19.1831"
+                                                        height="19.1831"
+                                                        fill="white"
+                                                    />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        {analysis}
+                                    </li>
+                                        )
+                                    )}
+                                </ul>
+                            </div>
+                        </div>
+                    ))
+                }
+
+            </div>
+        </div>
+    </section>
+    <FeaturedSlider />
+    <section
+        style="
+        background-image: url('/bgs/color-bg 2.png');
+        background-size: cover;
+        background-position: center;
+      "
+        class="bg-primary py-12 lg:py-20"
+    >
+        <div class="container">
+            <h2 class="text-white mb-6 lg:mb-7 max-w-xs lg:max-w-xl">
+                Level up your products with Simbased
+            </h2>
+            <a
+                href="/contact"
+                class="px-5 lg:px-7 text-sm w-fit items-start py-3 lg:py-3.5 flex gap-x-3 hover:ring-2 hover:ring-primary hover:ring-opacity-50 duration-300 bg-white text-black"
+            >
+                <span>Get in touch</span>
+                <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M1 18.4059L12.9944 6.39343"
+                        stroke="black"
+                        stroke-opacity="0.9"
+                        stroke-width="1.7"></path>
+                    <path
+                        d="M13.0277 6.49352C13.4968 6.49352 13.877 6.11268 13.877 5.64288C13.877 5.17308 13.4968 4.79224 13.0277 4.79224L13.0277 6.49352ZM1.75895 6.49352H13.0277L13.0277 4.79224H1.75895L1.75895 6.49352Z"
+                        fill="black"
+                        fill-opacity="0.9"></path>
+                    <path
+                        d="M13.877 6.39338C13.877 5.92358 13.4968 5.54273 13.0277 5.54273C12.5586 5.54273 12.1783 5.92358 12.1783 6.39338L13.877 6.39338ZM13.877 17.6791V6.39338L12.1783 6.39338V17.6791L13.877 17.6791Z"
+                        fill="black"
+                        fill-opacity="0.9"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+</Layout>
+<style>
+    .gradient-hero {
+        @media (min-width: 1024px) {
+            background: linear-gradient(29.27deg, #050820 18.84%, #0000 75.39%);
+        }
+        background: linear-gradient(
+            31.32deg,
+            #0b192de6 37.52%,
+            #24385400 90.66%
+        );
+    }
+    .tabcontent {
+        display: none;
+    }
+
+    .tabcontent.show {
+        display: grid;
+    }
+    .header-tab {
+        cursor: pointer;
+    }
+
+    .header-tab.show {
+        @apply text-primary;
+        @apply bg-primary/10 border-l-8 border-l-primary;
+    }
+    .tabs-nav-mobile.show {
+        @apply text-primary;
+        @apply bg-primary/10 border-l-8 border-l-primary;
+    }
+    .navs-mobile-screen {
+        scrollbar-width: thin;
+    }
+
+    .navs-mobile-screen::-webkit-scrollbar {
+        width: 3px;
+    }
+    .navs-mobile-screen::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgb(33, 154, 166);
+    }
+</style>
+<script define:vars={{ currentUrl }}>
+    window.addEventListener("DOMContentLoaded", function () {
+        "use strict";
+        let tab = document.querySelectorAll(".header-tab"),
+            header = document.querySelector(".tabs-nav"),
+            tabMobile = document.querySelectorAll(".tabs-nav-mobile"),
+            headerSmall = document.querySelector(".navs-mobile-screen"),
+            tabContent = document.querySelectorAll(".tabcontent");
+
+        function hideTabContent(a) {
+            for (let i = a; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("show");
+                tabContent[i].classList.add("hide");
+            }
+        }
+
+        hideTabContent(1);
+
+        function showTabContent(b) {
+            if (tabContent[b].classList.contains("hide")) {
+                tabContent[b].classList.remove("hide");
+                tabContent[b].classList.add("show");
+            }
+        }
+        tab.forEach(function (item) {
+            item.addEventListener("click", function (event) {
+                tab.forEach(function (i) {
+                    i.classList.remove("show");
+                });
+                item.classList.toggle("show");
+            });
+        });
+
+        tabMobile.forEach(function (item) {
+            item.addEventListener("click", function (event) {
+                tabMobile.forEach(function (i) {
+                    i.classList.remove("show");
+                });
+                item.classList.toggle("show");
+            });
+        });
+
+        header?.addEventListener("click", function (event) {
+            let target = event.target;
+
+            if (target && target.classList.contains("header-tab")) {
+                for (let i = 0; i < tab.length; i++) {
+                    if (target == tab[i]) {
+                        hideTabContent(0);
+                        showTabContent(i);
+                        break;
+                    }
+                }
+            }
+        });
+        headerSmall?.addEventListener("click", function (event) {
+            let target = event.target;
+
+            if (target && target.classList.contains("tabs-nav-mobile")) {
+                for (let i = 0; i < tabMobile.length; i++) {
+                    if (target == tabMobile[i]) {
+                        hideTabContent(0);
+                        showTabContent(i);
+                        break;
+                    }
+                }
+            }
+        });
+        tab.forEach(function (item) {
+            const tabData = item.getAttribute("data-tab");
+            if (currentUrl.includes(tabData)) {
+                item.classList.add("show");
+            }
+        });
+        tabContent.forEach(function (item) {
+            const tabDataContent = item.getAttribute("data-content");
+            if (currentUrl.includes(tabDataContent)) {
+                item.classList.add("show");
+            }
+        });
+        tabMobile.forEach(function (item) {
+            const tabDataMobile = item.getAttribute("data-tab-mobile");
+            if (currentUrl.includes(tabDataMobile)) {
+                item.classList.add("show");
+            }
+        });
+    });
+</script>

@@ -1,0 +1,56 @@
+{
+    "page": "home",
+    "seo_title": "Simbased | Engineering design & simulation solutions",
+    "seo_desc": "Simbased specializes in product design and advanced simulations, offering a competitive edge with better, reliable products at lower costs and faster time to market.",
+    "title": "Advancing industries through simulation",
+    "desc": "We are an engineering consulting company leveraging on advanced computer simulations to solve complex optimization challenges in engineering and product design.",
+    "bg_hero": [
+        "/images/home/rocket.png",
+        "/images/home/pipe2.png",
+        "/images/home/about.png"
+    ],
+    "slider_logo":[
+        {
+            "alt": "",
+            "logo": "/images/logo/bcr_logo_color_horizontal_tagline.png"
+        },
+        {
+            "alt": "",
+            "logo": "/images/logo/citygreen-about.png"
+        },
+        {
+            "alt": "",
+            "logo": "/images/logo/Cosylab-logo-2023.png"
+        },
+        {
+            "alt": "",
+            "logo": "/images/logo/fluencelogo.png"
+        },
+        {
+            "alt": "",
+            "logo": "/images/logo/soninhybridlogo.png"
+        },{
+            "alt": "",
+            "logo": "/images/logo/technogrouplogo.png"
+        }
+    ],
+    "industry_title": "Industries we serve",
+    "industry_desc": "Explore the diverse range of industries supported by Simbased.",
+    "solutions_title": "Our solutions",
+    "solutions_desc": "Simbased offers numerical simulations and product design services to enhance your ability to develop better, more reliable products for your business.",
+    "faq": [
+        {
+            "question": "Experienced team",
+            "answer": "With a deep reservoir of knowledge and a passion for innovation, our experienced team at Simbased comprises industry experts with decades of collective expertise. We stand ready to leverage this insight and skill to deliver exceptional results for your projects."
+        },
+        {
+            "question": "Advanced software",
+            "answer": "Harnessing the power of cutting-edge software tools, Simbased empowers clients with the latest advancements in engineering technology. Our precise and efficient simulations, enabled by state-of-the-art software solutions, facilitate faster iterations and more accurate predictions, driving your project towards success."
+        },
+        {
+            "question": "High client satisfaction",
+            "answer": "At Simbased, our unwavering commitment to client satisfaction drives every aspect of our work. With a track record of consistently delivering on promises and surpassing expectations, our dedication to high client satisfaction is the cornerstone of our success."
+        }
+    ],
+    "faq_img": "/images/home/digger.png"
+}

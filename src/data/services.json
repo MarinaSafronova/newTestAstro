@@ -1,0 +1,185 @@
+[
+    {
+        "name": "Numerical simulations",
+        "seo_title": "Simbased | Numerical simulations",
+        "seo_desc": "Numerical simulation can give us an incredible insight in the behaviour of our product. With the use of Finite Element Analysis, Computational Fluid Dynamics and other simulation methods we can study the real-world environment and adapt our design faster. This results in a more reliable and cheaper product with a faster time to market.",
+        "hero_bg": "/images/home/digger.png",
+        "image_index": "/images/numerical-solution.png",
+        "url": "/solutions/numerical-simulation",
+        "desc": "Numerical simulation can give us an incredible insight in the behaviour of our product. With the use of Finite Element Analysis, Computational Fluid Dynamics and other simulation methods we can study the real-world environment and adapt our design faster. This results in a more reliable and cheaper product with a faster time to market.",
+        "info": [
+            {
+                "title": "Structural analysis",
+                "list": [
+                    "Nonlinear analysis (Complex nonlinear problems including nonlinear contact, material properties and large deformations, buckling, creep, etc...)",
+                    "Structural analysis (Code compliant analysis of civil and industrial structures.)",
+                    "Pressure vessel analysis (ASME Section VIII Division 2)",
+                    "Pipeline stress analysis (Welding stresses with safety assessments, ASME B31.3)",
+                    "Thermo-mechanical simulations (Thermo-mechanical loads, expansion of materials, residual stresses)"
+                ],
+                "img": "/silo.png"
+            },
+            {
+                "title": "Dynamic analysis",
+                "list": [
+                    "Multi-Body Dynamics (Complex mechanisms like landing gears and suspensions)",
+                    "Normal modes (Natural frequencies and mode shapes, Complex eigenvalues, preloaded eigenvalues)",
+                    "Frequency response analysis (Direct integration and mode based steady-state response analysis)",
+                    "Acoustic and NVH analysis (Boundary element based acoustic analysis, fully acoustic analysis)",
+                    "Random response analysis and Response spectrum analysis",
+                    "Radiated power analysis"
+                ],
+                "img": "/dynamic-anal.png"
+            },
+            {
+                "title": "Crash analysis",
+                "list": [
+                    "Crash analysis (Complex structures like a vehicle, mobile phone, ect..)",
+                    "Strain-rate dependent materials",
+                    "Post-buckling effects",
+                    "Explicit dynamic (Complex dynamic structures like crankshafts)",
+                    "Blast simulations (soils, fluids and structures)",
+                    "Drop test simulations"
+                ],
+                "img": "/sliderBg.png"
+            },
+            {
+                "title": "Fatigue",
+                "list": [
+                    "Static analysis based fatigue (S-N curve, mean stress correction, residual stresses )",
+                    "Vibrational fatigue (Based on random response analysis)",
+                    "Thermomechanical fatigue (Power electronic thermo-mechanical analysis)"
+                ],
+                "img": "/F1.png"
+            },
+            {
+                "title": "Composite material",
+                "list": [
+                    "Predictions of components made from high-performance materials",
+                    "Inter and intra laminar damage modelling (Ply failure and delamination)",
+                    "Multi-scale analysis (Larger structures with embedded domains)",
+                    "Impact simulations on laminates (Stacked-shell approach)",
+                    "Micromechanics (Homogenization and localization)"
+                ],
+                "img": "/Home_carosel_4.png"
+            },
+            {
+                "title": "Thermal analysis",
+                "list": [
+                    "Solid heat transfer (Conduction and Radiation)​",
+                    "Conjugated heat transfer (Air and Liquid cooling)​",
+                    "Joule heating (Coupled electric thermal analysis for realistic heat losses calculation)",
+                    "Battery cell, electronic and electric motor cooling",
+                    "Heat exchanger and boiler thermal analysis"
+                ],
+                "img": "/thermanalysis.png"
+            },
+            {
+                "title": "Computational fluid dynamics",
+                "list": [
+                    "Multiphase flow simulation",
+                    "Particle analysis (Smooth particle hydrodynamics)",
+                    "Fluid-structural interaction (Turbine loads, exhaust system loading)",
+                    "Turbomachinery (pumps and turbines)",
+                    "Forced and natural convection",
+                    "Free surface flow (Complex shapes of cooling channels)",
+                    "Aerodynamics"
+                ],
+                "img": "/Drone.png"
+            },
+            {
+                "title": "Bulk material analysis",
+                "list": [
+                    "Discrete element method for bulk analysis",
+                    "Complex bulk material models",
+                    "Conveyor and hopper analysis",
+                    "Bulk material loading extraction",
+                    "Ware analysis"
+                ],
+                "img": "/DEM.png"
+            },
+            {
+                "title": "Manufacturing analysis",
+                "list": [
+                    "Injection molding (Simulation of flow, pack and warping stages. Optimization of cooling and molding parameters for higher productivity)​",
+                    "Forming (Analysis of deep drawing for single and multi-stage tools. Optimization of the die for the springbuck effect.)​",
+                    "Casting ( Gravitations, low and high-pressure casting processes)"
+                ],
+                "img": "/Figure4.png"
+            },
+            {
+                "title": "Electromagnetic analysis",
+                "list": [
+                    "PMSM analysis (Concept design, Torque speed characteristics, Cogging torque, back EMF harmonic study, Id-Iq maps, Eddy current losses, NVH)",
+                    "Induction motor analysis (Analysis of entire IM period, study of harmonics, starting analysis)",
+                    "SMR motor analysis (switch on-off angle optimization, losses calculation, current chopping techniques)"
+                ],
+                "img": "/EM.png"
+            },
+            {
+                "title": "Numerical optimization",
+                "list": [
+                    "Parametric optimization - (Shape optimization, thickness optimization, composite optimization, material characterization)",
+                    "Topology optimization - (Complex design spaces, multi-objective and multi-constraint optimization, manufacturing constraints)",
+                    "Topography and shape optimization - (Bead optimization, metal sheet thickness optimization, shape optimization)"
+                ],
+                "img": "/OPTIMIZATION_SERVICES_5.png"
+            }
+        ]
+    },
+    {
+        "name": "Product Design",
+        "seo_title": "Simbased | Engineering and Product design",
+        "seo_desc": "Using the latest engineering tools, we can take your product through all the stages of design, form concept to production readiness. You may only have an idea of what your product should do, or you can already have a preliminary design of your product, either way, we can help you design the most reliable and cost effective products on the market.",
+        "hero_bg": "/images/prod-design.jpeg",
+        "fullName": "Engineering and Product design",
+        "image_index": "/images/prod-design.jpeg",
+        "url": "/solutions/product-design",
+        "desc": "Using the latest engineering tools, we can take your product through all the stages of design, form concept to production readiness. You may only have an idea of what your product should do, or you can already have a preliminary design of your product, either way, we can help you design the most reliable and cost effective products on the market.",
+        "info": [
+            {
+                "title": "Concept design",
+                "list": [
+                    "With our engineering experiences we can help you develop product from the concept idea.",
+                    "Using the CAD design we can make early iterations of the designs come to life and adjust it as we go.",
+                    "Ensuring the product is compliant with appropriate technical and regulatory specifications"
+                ],
+                "img": "/product_1.png"
+            },
+            {
+                "title": "3D CAD modelling",
+                "list": [
+                    "Precision modelling of complex parts and assemblies",
+                    "Model preparation for rapid prototyping and various manufacturing methods, such as injection molding.",
+                    "Parametric 3D design for iterative product design",
+                    "Advanced surface modelling and forming",
+                    "Visualization for better understanding of products form, function, and aesthetics"
+                ],
+                "img": "/blender.png"
+            },
+            {
+                "title": "3D Print Prototyping and Manufacturing",
+                "list": [
+                    "We offer rapid prototyping with the latest 3D printing technology",
+                    "Precision CNC machining via our trusted partners for prototyping and production"
+                ],
+                "img": "/3dprint.jpg"
+            },
+            {
+                "title": "Technical Documentation",
+                "list": [
+                    "With our extensive knowledge of manufacturing processes and tolerancing, we prepare complete technical documentation, enabling smooth transition of your product into production"
+                ],
+                "img": "/technologyManufac.png"
+            },
+            {
+                "title": "Requirements Definition",
+                "list": [
+                    "We assist in defining your product requirements by conducting thorough industry standard analyses and comprehensive market research.",
+                    "Ensuring your product complies with all defined requirements is our top priority."
+                ],
+                "img": "/blender_spec1.jpeg"
+            }
+        ]
+    }
+]

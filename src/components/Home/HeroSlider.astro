@@ -1,0 +1,114 @@
+---
+import { Picture } from "astro:assets";
+import Home from "../../data/home.json";
+---
+
+<section
+    id="el-hero"
+    class="w-screen relative h-[calc(95vh-60px)] lg:h-[calc(100vh-200px)] bg-cover bg-blend-multiply bg-no-repeat bg-right-bottom overflow-x-hidden max-w-screen isolate"
+>
+    <div
+        class="left-1/2 lg:top-1/2 transform lg:-translate-y-1/2 w-full container -translate-x-1/2 overflow-visible absolute flex items-end lg:items-center py-3 lg:py-5 z-30"
+    >
+        <div class="text-white overflow-hidden">
+            <div class="hidden lg:flex gap-x-3 items-center"></div>
+            <div class="my-7 lg:my-2"></div>
+            <h1
+                id="hero-title"
+                class="text-[2rem] leading-[2rem] lg:text-6xl font-medium text-foreground lg:text-white max-w-xl"
+            >
+                {Home.title}
+            </h1>
+            <p
+                id="hero-body"
+                class="leading-[1.5rem] font-normal text-[1.02rem] lg:text-xl max-w-[360px] text-muted-foreground lg:text-white/80 lg:max-w-xl mt-3"
+            >
+                {Home.desc}
+            </p>
+            <div class="py-2 lg:py-4"></div>
+            <div class="flex items-center w-full lg:w-fit gap-x-4">
+                <a
+                    href="/contact"
+                    class="px-5 lg:px-7 text-sm w-fit items-start py-3 lg:py-3.5 flex gap-x-3 hover:ring-2 hover:ring-primary hover:ring-opacity-50 duration-300 bg-gradient-to-r from-[#1FA48C] via-[#1F9BA4] to-[#1F6CA4] text-white"
+                >
+                    <span>Get in touch</span>
+                    <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M1 18.4059L12.9944 6.39343"
+                            stroke="white"
+                            stroke-opacity="0.9"
+                            stroke-width="1.7"></path>
+                        <path
+                            d="M13.0277 6.49352C13.4968 6.49352 13.877 6.11268 13.877 5.64288C13.877 5.17308 13.4968 4.79224 13.0277 4.79224L13.0277 6.49352ZM1.75895 6.49352H13.0277L13.0277 4.79224H1.75895L1.75895 6.49352Z"
+                            fill="white"
+                            fill-opacity="0.9"></path>
+                        <path
+                            d="M13.877 6.39338C13.877 5.92358 13.4968 5.54273 13.0277 5.54273C12.5586 5.54273 12.1783 5.92358 12.1783 6.39338L13.877 6.39338ZM13.877 17.6791V6.39338L12.1783 6.39338V17.6791L13.877 17.6791Z"
+                            fill="white"
+                            fill-opacity="0.9"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div
+        class="absolute hidden lg:block w-full z-10 h-full top-0 left-0"
+        style="
+                    background: linear-gradient(
+                        81.65deg,
+                        #0b1729 17.47%,
+                        rgba(0, 0, 0, 0) 99.64%
+                    );
+                "
+    >
+    </div>
+    <div
+        class="swiper overflow-hidden cursor-ew-resize w-full h-full hero-slider"
+    >
+        <div class="swiper-wrapper">
+            {
+                Home.bg_hero.map((img) => (
+                    <div class="swiper-slide">
+                        <Picture
+                            src={img}
+                            loading="eager"
+                            class="object-cover absolute left-0 w-full bottom-0 h-[47vh] lg:h-full z-0 object-[100%,0%] lg:object-[50%,50%]"
+                            alt={Home.title}
+                            decoding="async"
+                            inferSize={true}
+                            width="4096"
+                            height="2332"
+                            formats={["png", "webp"]}
+                        />
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>
+
+<script>
+    import "swiper/css";
+    import Swiper from "swiper";
+    import { register } from "swiper/element/bundle";
+    register();
+
+    const swiper = new Swiper(".hero-slider", {
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 0,
+        speed: 2000,
+        loop: true,
+        autoplay: {
+            delay: 4000,
+
+            disableOnInteraction: false,
+        },
+    });
+</script>

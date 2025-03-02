@@ -1,0 +1,39 @@
+{
+    "page": "About",
+    "seo_title": "Simbased | About Us",
+    "seo_desc": "Learn about Simbased, a leading engineering consulting firm, specializing in product design and advanced simulations.",
+    "title": "Simbased",
+    "desc": "Discover Simbased, a premier engineering consulting firm specialising in cutting-edge product design and advanced simulations.",
+    "bg_hero": "/images/about/about.png",
+    "trust_title": "Your trusted technical simulations partner",
+    "trust_desc": "Simbased is an engineering consulting company specializing in product design and advanced computer simulations. We provide a competitive advantage for our clients. With the use of our engineering experience, we design better and more reliable products with lower costs and shorter time to market.",
+    "trust_img": "/images/about/partner.png",
+    "stats_title": "Simbased by the stats",
+    "industry_number": "10",
+    "industry_title": "Industries we support with our services",
+    "completed_projects": "130",
+    "completed_title": "Successfully completed projects",
+    "satisfied_clients": "45",
+    "satisfied_title": "Satisfied clients",
+    "team_title": "Meet the team",
+    "team_members": [
+        {
+            "name": "Uroš Rožič, MSc",
+            "role": "Managing Director",
+            "image": "/images/team/uros.png",
+            "desc": "Uroš is an accomplished software engineer with over a decade of experience in the software industry. His passion lies in creating intuitive software solutions that simplify users' lives. Advocating for the future of software development, Uroš is a staunch supporter of open source software. Joining the Simbased team fills him with excitement as he looks forward to contributing to the company's growth and success."
+        },
+        {
+            "name": "Tilen Ceglar, PhD",
+            "role": "Simulation engineer",
+            "image": "/images/team/tilen.png",
+            "desc": "Tilen is specialist in numerical multiphysics simulations, holds a Ph.D. in nonlinear structural mechanics and over 10 years' experience. He excels in solving intricate problems across various sectors and has contributed to around 40 patents worldwide. Tilen is keen on collaborating to address engineering challenges and drive innovation."
+        },
+        {
+            "name": "Preston Whitney",
+            "role": "Technical Sales",
+            "image": "/images/team/preston.png",
+            "desc": "Preston is a technologist professional with a rich background in advanced manufacturing, mechanical design, and productization. Boasting over two decades of experience in innovation and prototyping, with simulation playing a pivotal role in each project. Passionate about innovation, he combines insight and creativity to ensure client success."
+        }
+    ]
+}
