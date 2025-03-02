@@ -1,1 +1,0 @@
-import{r as e,S as r}from"./swiper-element-bundle.ZDY5acEW.js";e();new r(".featured-slider",{slidesPerView:"auto",centeredSlides:!0,loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},breakpoints:{300:{slidesPerView:"auto",centeredSlides:!0,spaceBetween:20},580:{spaceBetween:40,slidesPerView:"auto"}}});
