@@ -1,8 +1,8 @@
 /* empty css                                    */
-import { c as createComponent, r as renderTemplate, a as renderComponent, b as renderScript, m as maybeRenderHead, d as addAttribute } from '../../chunks/astro/server_BFomc8PK.mjs';
+import { c as createComponent, r as renderTemplate, a as renderComponent, b as renderScript, m as maybeRenderHead, d as addAttribute } from '../../chunks/astro/server_DWwxT_go.mjs';
 import 'kleur/colors';
-import { $ as $$FeaturedSlider } from '../../chunks/FeaturedSlider_Wrsy_dhh.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_C43bDxkL.mjs';
+import { $ as $$FeaturedSlider } from '../../chunks/FeaturedSlider_Wkpji2w_.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_FFqXFnZm.mjs';
 import { D as Data } from '../../chunks/case-page_af26CZR3.mjs';
 export { renderers } from '../../renderers.mjs';
 

@@ -1,9 +1,9 @@
 /* empty css                                 */
-import { e as createAstro, c as createComponent, r as renderTemplate, f as defineScriptVars, a as renderComponent, m as maybeRenderHead, d as addAttribute } from '../chunks/astro/server_BFomc8PK.mjs';
+import { e as createAstro, c as createComponent, r as renderTemplate, f as defineScriptVars, a as renderComponent, m as maybeRenderHead, d as addAttribute } from '../chunks/astro/server_DWwxT_go.mjs';
 import 'kleur/colors';
-import { D as Data, $ as $$Layout } from '../chunks/Layout_C43bDxkL.mjs';
-import { $ as $$ResponsivePicture } from '../chunks/_astro_assets_DCG_HXhB.mjs';
-import { $ as $$FeaturedSlider } from '../chunks/FeaturedSlider_Wrsy_dhh.mjs';
+import { D as Data, $ as $$Layout } from '../chunks/Layout_FFqXFnZm.mjs';
+import { $ as $$Picture } from '../chunks/_astro_assets_DqtUlNMW.mjs';
+import { $ as $$FeaturedSlider } from '../chunks/FeaturedSlider_Wkpji2w_.mjs';
 /* empty css                                      */
 export { renderers } from '../renderers.mjs';
 
@@ -23,7 +23,7 @@ const $$Industries = createComponent(($$result, $$props, $$slots) => {
                                     #319ea6 36.1%,
                                     #7da9ff 112.45%
                                 );
-                            " class="text-transparent bg-clip-text" data-astro-cid-ywjycmg3>${Data.page}</span> <span data-astro-cid-ywjycmg3>${Data.title}</span> </h1> <p class="leading-[1.5rem] text-[1.02rem] md:text-lg max-w-[340px] text-white/90 lg:max-w-2xl mt-2" data-astro-cid-ywjycmg3> ${Data.desc} </p> </div> </div> <div class="absolute w-full z-10 h-full top-0 left-0 gradient-hero" data-astro-cid-ywjycmg3></div> ${renderComponent($$result2, "Picture", $$ResponsivePicture, { "src": Data.bg_hero, "loading": "eager", "alt": "Hero image", "class": "object-cover w-full h-full z-0 object-[65%,50%]", "width": "3024", "height": "1594", "decoding": "async", "formats": ["png", "webp"], "data-astro-cid-ywjycmg3": true })} </section> <section style="background-image: url('/bgs/06 3.png');" class="py-20 lg:py-32 bg-zinc-100" id="selector" data-astro-cid-ywjycmg3> <div class="container mb-10" data-astro-cid-ywjycmg3> <h2 data-astro-cid-ywjycmg3>
+                            " class="text-transparent bg-clip-text" data-astro-cid-ywjycmg3>${Data.page}</span> <span data-astro-cid-ywjycmg3>${Data.title}</span> </h1> <p class="leading-[1.5rem] text-[1.02rem] md:text-lg max-w-[340px] text-white/90 lg:max-w-2xl mt-2" data-astro-cid-ywjycmg3> ${Data.desc} </p> </div> </div> <div class="absolute w-full z-10 h-full top-0 left-0 gradient-hero" data-astro-cid-ywjycmg3></div> ${renderComponent($$result2, "Picture", $$Picture, { "src": Data.bg_hero, "loading": "eager", "alt": "Hero image", "class": "object-cover w-full h-full z-0 object-[65%,50%]", "width": "3024", "height": "1594", "decoding": "async", "formats": ["png", "webp"], "data-astro-cid-ywjycmg3": true })} </section> <section style="background-image: url('/bgs/06 3.png');" class="py-20 lg:py-32 bg-zinc-100" id="selector" data-astro-cid-ywjycmg3> <div class="container mb-10" data-astro-cid-ywjycmg3> <h2 data-astro-cid-ywjycmg3>
 Select your
 <span style="
                             background-image: linear-gradient(

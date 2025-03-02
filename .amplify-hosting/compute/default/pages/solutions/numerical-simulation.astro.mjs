@@ -1,9 +1,9 @@
 /* empty css                                    */
-import { c as createComponent, r as renderTemplate, a as renderComponent, b as renderScript, m as maybeRenderHead, d as addAttribute } from '../../chunks/astro/server_BFomc8PK.mjs';
+import { c as createComponent, r as renderTemplate, a as renderComponent, b as renderScript, m as maybeRenderHead, d as addAttribute } from '../../chunks/astro/server_DWwxT_go.mjs';
 import 'kleur/colors';
-import { S as Services, $ as $$Layout } from '../../chunks/Layout_C43bDxkL.mjs';
-import { $ as $$ResponsivePicture } from '../../chunks/_astro_assets_DCG_HXhB.mjs';
-import { $ as $$FeaturedSlider } from '../../chunks/FeaturedSlider_Wrsy_dhh.mjs';
+import { S as Services, $ as $$Layout } from '../../chunks/Layout_FFqXFnZm.mjs';
+import { $ as $$Picture } from '../../chunks/_astro_assets_DqtUlNMW.mjs';
+import { $ as $$FeaturedSlider } from '../../chunks/FeaturedSlider_Wkpji2w_.mjs';
 /* empty css                                                   */
 export { renderers } from '../../renderers.mjs';
 
@@ -56,7 +56,7 @@ const $$NumericalSimulation = createComponent(($$result, $$props, $$slots) => {
     alt="Hero image"
     loading="eager"
     class="object-cover w-full h-full z-0"
-  /> --> <div class="absolute z-0 w-full h-full top-0 left-0" data-astro-cid-s7rkva4n> ${renderComponent($$result2, "Picture", $$ResponsivePicture, { "src": Services[0].hero_bg || "/images/home/digger.png", "loading": "eager", "alt": "Hero image", "class": "object-cover absolute bottom-0 w-full h-[42vh] lg:h-full z-0 -scale-x-100", "width": "1920", "height": "991", "decoding": "async", "formats": ["png", "webp"], "data-astro-cid-s7rkva4n": true })} </div> </section> <section style="background-image: url('/bgs/06 3.png')" class="section-y-padding bg-zinc-100" data-astro-cid-s7rkva4n> <div class="container mb-10" data-astro-cid-s7rkva4n> <h2 class="max-w-lg" data-astro-cid-s7rkva4n>
+  /> --> <div class="absolute z-0 w-full h-full top-0 left-0" data-astro-cid-s7rkva4n> ${renderComponent($$result2, "Picture", $$Picture, { "src": Services[0].hero_bg || "/images/home/digger.png", "loading": "eager", "alt": "Hero image", "class": "object-cover absolute bottom-0 w-full h-[42vh] lg:h-full z-0 -scale-x-100", "width": "1920", "height": "991", "decoding": "async", "formats": ["png", "webp"], "data-astro-cid-s7rkva4n": true })} </div> </section> <section style="background-image: url('/bgs/06 3.png')" class="section-y-padding bg-zinc-100" data-astro-cid-s7rkva4n> <div class="container mb-10" data-astro-cid-s7rkva4n> <h2 class="max-w-lg" data-astro-cid-s7rkva4n>
 Types of numerical
 <span style="
               background-image: linear-gradient(

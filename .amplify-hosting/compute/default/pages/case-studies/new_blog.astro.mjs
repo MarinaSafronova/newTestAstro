@@ -1,7 +1,7 @@
 /* empty css                                    */
-import { c as createComponent, r as renderTemplate, a as renderComponent } from '../../chunks/astro/server_BFomc8PK.mjs';
+import { c as createComponent, r as renderTemplate, a as renderComponent } from '../../chunks/astro/server_DWwxT_go.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../chunks/Layout_C43bDxkL.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_FFqXFnZm.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$NewBlog = createComponent(($$result, $$props, $$slots) => {
