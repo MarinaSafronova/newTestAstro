@@ -572,7 +572,9 @@ import Data from "../data/industry.json";
     import Swiper from "swiper";
     import { register } from "swiper/element/bundle";
     register();
-    function initSwiper() {
+   
+
+    (function () {
         const swiper = new Swiper(".featured-slider", {
             slidesPerView: "auto",
             centeredSlides: true,
@@ -593,8 +595,6 @@ import Data from "../data/industry.json";
                 },
             },
         });
-       }
-    initSwiper()  
-
+})();
 </script>
 
