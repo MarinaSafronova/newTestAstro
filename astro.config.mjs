@@ -7,6 +7,7 @@ import partytown from '@astrojs/partytown';
 import awsAmplify from 'astro-aws-amplify';
 
 
+
 // https://astro.build/config
 export default defineConfig({
   output: 'server',
