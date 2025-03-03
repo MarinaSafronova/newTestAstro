@@ -1,7 +1,7 @@
 import "swiper/css";
     import Swiper from "swiper";
     import { Navigation } from 'swiper/modules';
-     function initSwiper() {
+    (function () {
         const swiper = new Swiper(".featured-slider", {
             slidesPerView: "auto",
             modules: [Navigation],
@@ -25,5 +25,4 @@ import "swiper/css";
                 },
             },
         });
-    }
-    initSwiper();
+    })();
