@@ -196,6 +196,7 @@ import Data from "../data/case-page.json";
         import { register } from "swiper/element/bundle";
         window.addEventListener("DOMContentLoaded", () => {
             register();
+           function initSwiper() {
             const swiper = new Swiper(".featured-slider", {
                 slidesPerView: "auto",
                 centeredSlides: true,
@@ -216,6 +217,8 @@ import Data from "../data/case-page.json";
                     },
                 },
             });
+           }
+           initSwiper()     
         });
     </script>
     <style scoped>
