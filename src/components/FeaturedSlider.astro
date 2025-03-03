@@ -194,9 +194,8 @@ import Data from "../data/case-page.json";
         import "swiper/css";
         import Swiper from "swiper";
         import { register } from "swiper/element/bundle";
-        register();
-
-        document.addEventListener("DOMContentLoaded", () => {
+        window.addEventListener("DOMContentLoaded", () => {
+            register();
             const swiper = new Swiper(".featured-slider", {
                 slidesPerView: "auto",
                 centeredSlides: true,
