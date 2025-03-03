@@ -1,5 +1,5 @@
 ---
-import Data from "../data/case-page.json";
+import CasePage from "../data/case-page.json";
 ---
 
 <section class="section-y-padding border-y">
@@ -69,7 +69,7 @@ import Data from "../data/case-page.json";
         <div class="swiper featured-slider overflow-visible cursor-ew-resize">
             <div class="swiper-wrapper">
                 {
-                    Data.case_studies.map((item) => (
+                    CasePage.case_studies.map((item) => (
                         <div class="swiper-slide max-w-[calc(100%-40px)] sm:max-w-md lg:max-w-[440px] h-fit">
                             <a class="group" href={item.case_url}>
                                 <div class="w-full mb-5 aspect-[17/9]">
@@ -226,7 +226,7 @@ import Data from "../data/case-page.json";
 </script>
 <style scoped>
     .swiper-wrapper {
-        margin-left: 50%;
+        margin-left: 45%;
     }
     @media (max-width: 1024px) {
         .swiper-wrapper {
