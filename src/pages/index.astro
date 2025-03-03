@@ -399,22 +399,3 @@ height: 60px;
         </section>
     </main>
 </Layout>
-<script>
-    import { navigate } from 'astro:transitions/client';
-    const Linksto = document.querySelectorAll(".industry-link")
-    const LinkServices = document.querySelectorAll(".services-link")
-    Linksto.forEach((link) => {
-        link.addEventListener("click", (e) => {
-           e.preventDefault();
-            const href = link.getAttribute("href");
-            navigate(href);
-        });
-    });
-    LinkServices.forEach((link) => {
-        link.addEventListener("click", (e) => {
-           e.preventDefault();
-            const href = link.getAttribute("href");
-            navigate(href);
-        });
-    });
-</script>

@@ -191,7 +191,44 @@ import CasePage from "../data/case-page.json";
     </div>
 </section>
 
-<script src="../libs/slider.js"></script>
+<!-- <script src="../libs/slider.js"></script> -->
+<script>
+    import Swiper from "swiper";
+    import "swiper/css";
+    import { register } from "swiper/element/bundle";
+
+    register();
+    function setupStuff() {
+        const swiper = new Swiper(".featured-slider", {
+            // Optional parameters
+            slidesPerView: "auto",
+            centeredSlides: true,
+            observer: true,
+            observeParents: true,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                300: {
+                    slidesPerView: "auto",
+                    centeredSlides: true,
+                    spaceBetween: 20,
+                },
+                580: {
+                    spaceBetween: 40,
+                    slidesPerView: "auto",
+                },
+            },
+        });
+    }
+    setupStuff();
+   document.addEventListener("astro:page-load", () => {
+        // This runs on first page load and after every navigation.
+        setupStuff(); // e.g. add event listeners
+    });
+</script>
 <style scoped>
     .swiper-wrapper {
         margin-left: 45%;
