@@ -190,45 +190,47 @@ import Data from "../data/case-page.json";
         </div>
     </div>
 
-    <script>
-        import "swiper/css";
-        import Swiper from "swiper";
-        import { register } from "swiper/element/bundle";
-        window.addEventListener("DOMContentLoaded", () => {
-            register();
-           function initSwiper() {
-            const swiper = new Swiper(".featured-slider", {
-                slidesPerView: "auto",
-                centeredSlides: true,
-                loop: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                breakpoints: {
-                    300: {
-                        slidesPerView: "auto",
-                        centeredSlides: true,
-                        spaceBetween: 20,
-                    },
-                    580: {
-                        spaceBetween: 40,
-                        slidesPerView: "auto",
-                    },
-                },
-            });
-           }
-           initSwiper()     
-        });
-    </script>
-    <style scoped>
-        .swiper-wrapper {
-            margin-left: 50%;
-        }
-        @media (max-width: 1024px) {
-            .swiper-wrapper {
-                margin-left: 0;
-            }
-        }
-    </style>
+   
 </section>
+
+<script>
+    import "swiper/css";
+    import Swiper from "swiper";
+    import { register } from "swiper/element/bundle";
+    window.addEventListener("DOMContentLoaded", () => {
+        register();
+       function initSwiper() {
+        const swiper = new Swiper(".featured-slider", {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                300: {
+                    slidesPerView: "auto",
+                    centeredSlides: true,
+                    spaceBetween: 20,
+                },
+                580: {
+                    spaceBetween: 40,
+                    slidesPerView: "auto",
+                },
+            },
+        });
+       }
+       initSwiper()     
+    });
+</script>
+<style scoped>
+    .swiper-wrapper {
+        margin-left: 50%;
+    }
+    @media (max-width: 1024px) {
+        .swiper-wrapper {
+            margin-left: 0;
+        }
+    }
+</style>
