@@ -475,8 +475,12 @@ import Data from "../data/industry.json";
     }
 </style>
 <script define:vars={{ currentUrl }}>
+   
+      
     window.addEventListener("DOMContentLoaded", function () {
-        "use strict";
+          
+        
+      
         let tab = document.querySelectorAll(".header-tab"),
             header = document.querySelector(".tabs-nav"),
             tabMobile = document.querySelectorAll(".tabs-nav-mobile"),
@@ -561,14 +565,14 @@ import Data from "../data/industry.json";
             }
         });
     });
+    
 </script>
-<script>
-    import "swiper/css";
+<script >
+     import "swiper/css";
     import Swiper from "swiper";
     import { register } from "swiper/element/bundle";
-    window.addEventListener("DOMContentLoaded", () => {
-        register();
-       function initSwiper() {
+    register();
+    function initSwiper() {
         const swiper = new Swiper(".featured-slider", {
             slidesPerView: "auto",
             centeredSlides: true,
@@ -590,6 +594,7 @@ import Data from "../data/industry.json";
             },
         });
        }
-       initSwiper()     
-    });
+    initSwiper()  
+
 </script>
+
