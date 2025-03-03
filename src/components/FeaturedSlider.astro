@@ -71,10 +71,7 @@ import Data from "../data/case-page.json";
                 {
                     Data.case_studies.map((item) => (
                         <div class="swiper-slide max-w-[calc(100%-40px)] sm:max-w-md lg:max-w-[440px] h-fit">
-                            <a
-                                class="group"
-                                href={item.case_url}
-                            >
+                            <a class="group" href={item.case_url}>
                                 <div class="w-full mb-5 aspect-[17/9]">
                                     <img
                                         class="w-full h-full object-cover"
@@ -199,25 +196,27 @@ import Data from "../data/case-page.json";
         import { register } from "swiper/element/bundle";
         register();
 
-        const swiper = new Swiper(".featured-slider", {
-            slidesPerView: "auto",
-            centeredSlides: true,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                300: {
-                    slidesPerView: "auto",
-                    centeredSlides: true,
-                    spaceBetween: 20,
+        document.addEventListener("DOMContentLoaded", () => {
+            const swiper = new Swiper(".featured-slider", {
+                slidesPerView: "auto",
+                centeredSlides: true,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
                 },
-                580: {
-                    spaceBetween: 40,
-                    slidesPerView: "auto",
+                breakpoints: {
+                    300: {
+                        slidesPerView: "auto",
+                        centeredSlides: true,
+                        spaceBetween: 20,
+                    },
+                    580: {
+                        spaceBetween: 40,
+                        slidesPerView: "auto",
+                    },
                 },
-            },
+            });
         });
     </script>
     <style scoped>
