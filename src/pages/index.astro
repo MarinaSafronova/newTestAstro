@@ -195,7 +195,8 @@ height: 60px;
                 Data.industrys.map((item) => (
                 <a
                     href=`/industries?industry=${item.industry_url}#selector`
-                    class="h-[200px] overflow-hidden relative lg:h-[280px] w-full lg:w-[calc(100%/3)] shrink basis-[calc(100%/3)] box-border group"
+                    data-astro-reload
+                    class="industry-link h-[200px] overflow-hidden relative lg:h-[280px] w-full lg:w-[calc(100%/3)] shrink basis-[calc(100%/3)] box-border group"
                 >
                     <div
                         class="w-full flex p-3 lg:p-7 items-end absolute z-20 h-full bg-background/80 left-0 top-0 group-hover:bg-primary/80 duration-300 ease-in-out"
@@ -245,6 +246,7 @@ height: 60px;
                         industry here?</span
                     >
                     <a
+                    data-astro-reload
                         href="/contact"
                         class="px-5 lg:px-7 text-sm w-fit items-start py-3 lg:py-3.5 flex gap-x-3 hover:ring-2 hover:ring-primary hover:ring-opacity-50 duration-300 bg-white text-black"
                     >
@@ -277,7 +279,7 @@ height: 60px;
             >
             {
                 Services.map((item) => (
-                <a href={item.url} class="group">
+                <a href={item.url} class="group services-link" data-astro-reload>
                     <div class="w-full aspect-[1.74] overflow-hidden">
                         <Image
                             src={item.image_index}
@@ -367,6 +369,7 @@ height: 60px;
                 </h2>
                 <a
                     href="/contact"
+                    data-astro-reload
                     class="px-5 lg:px-7 text-sm w-fit items-start py-3 lg:py-3.5 flex gap-x-3 hover:ring-2 hover:ring-primary hover:ring-opacity-50 duration-300 bg-white text-black"
                 >
                     <span>Get in touch</span>
@@ -396,3 +399,22 @@ height: 60px;
         </section>
     </main>
 </Layout>
+<script>
+    import { navigate } from 'astro:transitions/client';
+    const Linksto = document.querySelectorAll(".industry-link")
+    const LinkServices = document.querySelectorAll(".services-link")
+    Linksto.forEach((link) => {
+        link.addEventListener("click", (e) => {
+           e.preventDefault();
+            const href = link.getAttribute("href");
+            navigate(href);
+        });
+    });
+    LinkServices.forEach((link) => {
+        link.addEventListener("click", (e) => {
+           e.preventDefault();
+            const href = link.getAttribute("href");
+            navigate(href);
+        });
+    });
+</script>
